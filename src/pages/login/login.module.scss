@@ -1,0 +1,190 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    &__login {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color: $cor-principal;
+
+        @media (max-width: $mobile_sm){
+        background-color: $cor-secundaria;
+        padding: 0 2rem;
+        max-height: 100vh;
+        }
+    }
+    &__wrap{
+        width: 390px;
+        background-color: $cor-secundaria;
+        border-radius: .8rem;
+        overflow: hidden;
+        padding: 3rem 2rem;
+        box-shadow: $sombra;
+    
+        @media (max-width: $mobile_sm){
+            box-shadow: none;
+        }
+    }
+}
+
+.form{
+    width: 100%;
+    &__title{
+        color: $cor-branco;
+        display: block;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        text-align: center;
+        position: relative;;
+        width: max-content;
+        margin: 0 auto 1rem auto;
+        &:nth-child(2){
+            margin-bottom: 3.4rem;
+        }
+        &:nth-child(2)::before{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 22px;
+            bottom: -2px;
+            left: 0;
+            border-radius: 30%;
+            background-color: $cor-azul;
+        }
+        img{
+            width: 90px;
+        
+            @media (max-width: $mobile_sm){
+                margin-bottom: 1.4rem;
+            }
+            
+        }
+    }
+}
+
+.input{
+    font-size: 1rem;
+    color: $cor-branco;
+    line-height: 1.1;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    padding: 0 5px;
+    &:focus{
+    outline: none;
+}
+    &__wrap{
+        width: 100%;
+        position: relative;
+        border-bottom: .1rem solid $cor-borda-cinza;
+        margin-bottom: 2.4rem;
+    }
+    &__wrap2{
+        margin-bottom: 1rem;
+    }
+    &__focus{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        color: $cor-borda-cinza;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: all .4s;
+            background: $gradient;
+        }
+        &::after{
+            font-size: 1rem;
+            color: $cor-cinza;
+            line-height: 1.2;
+            content: attr(data-placeholder);
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 16px;
+            left: 0px;
+            padding-left: 5px;
+            transition: all .4s;
+        }
+    }
+}
+
+.input:focus + .input__focus::after{
+    top: -16px;
+}
+
+.input:focus + .input__focus::before{
+    width: 100%;
+}
+
+.hasVal + .input__focus::after{
+    top: -16px;
+}
+
+.hasVal + .input__focus::after{
+    width: 100%;
+}
+
+.forgot{
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 2.4rem;
+    justify-content: flex-end;
+}
+
+.containerLogin__btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.text__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.txt{
+    text-decoration: none;
+    line-height: 1.5;
+    &__1{
+        font-size: .9rem;
+        color: $cor-cinza;
+        line-height: 1.5;
+        padding-right: 1rem;
+    }
+    &__2{
+        font-size: 1rem;
+        color: $cor-azul-escuro; 
+    }
+    &__3{
+        font-size: .8rem;
+        color: $cor-cinza;
+        line-height: 1.2;
+        padding-bottom: 1rem;
+        text-align: right;
+    }
+}
+
+
