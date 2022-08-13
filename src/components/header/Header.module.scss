@@ -1,42 +1,173 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-.menu {
-  background-color: $cor-principal;
+.header{
   display: flex;
-  justify-content: space-around;
-  padding: 20px $padding-horizontal;
-  @media (max-width: $desktop_xsm) {
-    padding: 20px $padding-horizontal-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $padding-horizontal-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $padding-horizontal-md;
-  }
-  &__imagem{
-    width: 60px;
-    height: 70px;
-    align-items: flex-start;
-  }
-  &__list {
-    align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+  &__left{
     display: flex;
-  }
-  &__link {
-    list-style-type: none;
-    padding: 0 20px;
-    a {
-      color: $cor-borda-cinza;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: .2s ease;
-      &:hover {
-        color: $cor-azul-escuro;
+    flex: 3;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: $padding-horizontal;
+    padding-top: 1rem;
+    @media (max-width: $desktop_xsm) {
+      padding: $padding-horizontal-mobile;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: $padding-horizontal-sm;
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: $padding-horizontal-md;
+    }
+    &__ad{
+      align-items: center;
+      background-color: $cor-azul;
+      border-radius: 4rem;
+      color: $cor-branco;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 6rem;
+      padding: 1rem ;
+      position: relative;
+      text-transform: uppercase;
+      width: fit-content;
+      >span{
+        z-index: 2;
       }
+      >div{
+        background-color: $cor-azul-2;
+        border-radius: 50%;
+        height: 80%;
+        left: 8px;
+        position: absolute;
+        z-index: 1;
+        width: 3rem;
+      }  
+    }
+    &__text{
+      color: $cor-branco;
+      display: flex;
+      flex-direction: column;
+      font-size: 4rem;
+      font-weight: bold;
+      text-overflow: inherit;
+      text-transform: uppercase;
+      >div:nth-child(1){
+        margin-top: 2rem;
+      }
+    }
+    &__description{
+      margin-top: 1.5rem;
+      span{
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-transform: none;
+        width: 80%;
+      }
+    }
+    &__figures{
+      display: flex;
+      gap: 2rem;
+      >div{
+        display: flex;
+        flex-direction: column;
+        span:nth-of-type(1){
+          color: $cor-branco;
+          font-size: 2.5rem;
+          font-weight: 500;
+        }
+        span:nth-of-type(2){
+          color: $cor-cinza;
+          font-size: .86rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__buttons{
+      display: flex;
+      gap: 1rem;
+      font-weight: normal;
+      >:nth-child(2){
+        background-color: transparent;
+        border: 3px solid $cor-azul-escuro;
+        color: $cor-branco;
+      }
+    }
+    &__btn{
+      align-items: center;
+      background-color: $cor-azul-escuro;
+      border: 3px solid transparent;
+      color: $cor-branco;
+      display: flex;
+      font-weight: 400;
+      justify-content: center;
+      padding: 0.7rem;
+      transition: 300ms all;
+      width: 8rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  
+  &__right{
+    background-color: transparent;
+    flex: 1;
+    position: relative;
+    &__heartRate{
+      align-items: center;
+      background-color: $cor-azul-2;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      position: absolute;
+      right: 4rem;
+      top: 7rem;
+      width: fit-content;
+      z-index: 4;
+      >span:nth-child(3){
+        color: $cor-branco;
+        font-size: 2rem;
+      }
+      >span:nth-child(2){
+        color: $cor-cinza;
+        font-size: 1.25rem;
+      }
+    }
+    &__img{
+      height: 40px;
+      width: 50px;
+    }
+    &__frontimage{
+      height: 640px;
+      position: absolute;
+      right: 12rem;
+      top: 4rem;
+      z-index: 3;
+      width: 540px;
+    }
+    &__back{
+      height: 420px;
+      position: absolute;
+      right: 1rem;
+      top: 12.5rem;
+      z-index: 2;
+      width: 850px;
+    }
+    &__backimage{
+      background-color: $cor-azul;
+      border-radius: 20% 0 0 20%;
+      height: 420px;
+      position: absolute;
+      right: 0;
+      top: 13rem;
+      z-index: 1;
+      width: 850px;
     }
   }
 }

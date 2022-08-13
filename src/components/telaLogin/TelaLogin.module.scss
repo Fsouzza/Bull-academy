@@ -1,0 +1,35 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    &__login {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-color: $cor-principal;
+
+        @media (max-width: $mobile_sm){
+        background-color: $cor-secundaria;
+        padding: 0 2rem;
+        max-height: 100vh;
+        }
+    }
+    &__wrap{
+        width: 390px;
+        background-color: $cor-secundaria;
+        border-radius: .8rem;
+        overflow: hidden;
+        padding: 3rem 2rem;
+        box-shadow: $sombra;
+    
+        @media (max-width: $mobile_sm){
+            box-shadow: none;
+        }
+    }
+}
