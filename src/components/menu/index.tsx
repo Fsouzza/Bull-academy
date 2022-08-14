@@ -7,19 +7,25 @@ export const Menu = () =>{
     label: 'Home',
     to: '/'
   }, {
-    label: 'Exercícios',
-    to: '/exercicios'
+    label: 'treinos',
+    to: '/treinos'
   }, {
     label: 'Planos',
     to: '/planos'
   }, {
     label: 'Sobre',
     to: '/sobre'
+  }, {
+    label: 'Contato',
+    to: '/contato'
   }];
 
   return (
     <nav className={styles.menu}>
-      <img className={styles.menu__imagem} src={logo} alt="" />
+      <div>
+        <img className={styles.menu__imagem} src={logo} alt="" />
+        <h1>Bull <br /> Fitness</h1>
+      </div>
       <ul className={styles.menu__list}>
         {rotas.map((rota, index) => (
           <li key={index} className={styles.menu__link}>

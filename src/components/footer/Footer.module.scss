@@ -1,0 +1,57 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.footer{
+  background: $cor-azul-escuro;
+  font-size: 1rem;
+  margin-top: 7rem;
+  padding: $padding-horizontal 0;
+    @media (max-width: $desktop_xsm) {
+      padding: $padding-horizontal-mobile 0;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: $padding-horizontal-sm 0;
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: $padding-horizontal-md 0;
+    }
+  text-align: center;
+  &__logo{
+    display: inline-block;
+    height: 80px;
+    margin-bottom: 2rem;
+    width: 80px;
+  }
+  &__permalinks{
+    color: $cor-cinza;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto 3rem;
+  }
+  &__socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    a{
+      background-color: $cor-principal;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      color: $cor-branco;
+      display: flex;
+      padding: 0.8rem;
+      &:hover{
+        background-color: transparent;
+        color: $cor-principal;
+        border-color: $cor-principal;
+      }
+    }
+  }
+  &__copyright{
+    border-top: 1px solid $cor-cinza;
+    color: $cor-cinza;
+    margin-bottom: 1rem;
+  }
+}

@@ -2,9 +2,10 @@
 @import "styles/breakpoints";
 
 .menu {
+  align-items: center;
   background-color: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: .5rem $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: .5rem $padding-horizontal-mobile;
@@ -15,10 +16,21 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: .5rem $padding-horizontal-md;
   }
+  >div{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    h1{
+      color: $cor-cinza;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
   &__imagem{
-    width: 60px;
-    height: 70px;
-    align-items: flex-start;
+    width: 100px;
+    height: 72px;
+    align-items: center;
   }
   &__list {
     align-items: center;
@@ -26,11 +38,11 @@
   }
   &__link {
     list-style-type: none;
-    padding: 0 20px;
+    padding: 0 14px;
     a {
       color: $cor-cinza;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 1.1rem;
       font-weight: 600;
       text-decoration: none;
       transition: .2s ease;

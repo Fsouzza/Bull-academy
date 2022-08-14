@@ -1,7 +1,7 @@
 import styles from './Home.module.scss';
 import heart from 'assets/img/icon/heart.svg';
 import frontImg from 'assets/img/front.png';
-import back from 'assets/img/back.png';
+import background from 'assets/img/background.png';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
@@ -56,8 +56,7 @@ export const Home = () => {
           <span>116 bpm</span>
         </div>
         <img src={frontImg} alt='' className={styles.header__right__frontimage} />
-        <img src={back} alt='' className={styles.header__right__back} />
-        <div className={styles.header__right__backimage} />
+        <img src={background} alt='' className={styles.header__right__back} />
       </div>
     </header>
   );
