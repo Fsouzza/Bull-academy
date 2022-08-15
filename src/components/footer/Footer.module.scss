@@ -23,29 +23,35 @@
     width: 80px;
   }
   &__permalinks{
-    color: $cor-cinza;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
+  }
+  &__link{
+    color: $cor-cinza;
+    transition: .6s ease;
+    &:hover{
+      color: $cor-preta;
+    }
   }
   &__socials{
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     a{
-      background-color: $cor-principal;
-      border: 1px solid transparent;
+      background-color: $cor-preta;
+      border: 2px solid transparent;
       border-radius: 50%;
-      color: $cor-branco;
+      color: $cor-borda-cinza;
       display: flex;
       padding: 0.8rem;
       &:hover{
         background-color: transparent;
-        color: $cor-principal;
-        border-color: $cor-principal;
+        color: $cor-preta;
+        border-color: $cor-preta;
       }
     }
   }
@@ -53,5 +59,6 @@
     border-top: 1px solid $cor-cinza;
     color: $cor-cinza;
     margin-bottom: 1rem;
+    padding-top: .5rem;
   }
 }

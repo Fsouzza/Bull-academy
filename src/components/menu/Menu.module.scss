@@ -6,15 +6,15 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: .5rem $padding-horizontal;
+  padding: 0 $padding-horizontal;
   @media (max-width: $desktop_xsm) {
-    padding: .5rem $padding-horizontal-mobile;
+    padding: 0 $padding-horizontal-mobile;
   }
   @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: .5rem $padding-horizontal-sm;
+    padding: 0 $padding-horizontal-sm;
   }
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: .5rem $padding-horizontal-md;
+    padding: 0 $padding-horizontal-md;
   }
   >div{
     align-items: center;
@@ -25,11 +25,13 @@
       color: $cor-cinza;
       font-size: 1.6rem;
       font-weight: bold;
+      letter-spacing: 1px;
+      width: fit-content;
     }
   }
   &__imagem{
-    width: 100px;
-    height: 72px;
+    width: 89px;
+    height: 60px;
     align-items: center;
   }
   &__list {
@@ -61,7 +63,6 @@
     justify-content: center;
     margin: auto 0;
     padding: 1rem 2rem;
-    transition: .6s ease;
     &:hover {
       background: $gradient-hover;
     }

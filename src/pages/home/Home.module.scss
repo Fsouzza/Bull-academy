@@ -36,8 +36,9 @@
         z-index: 2;
       }
       >div{
+        animation: slide 1400ms linear alternate;
         background-color: $cor-azul-2;
-        border-radius: 40%;
+        border-radius: 40% 40% 60%;
         height: 80%;
         left: 8px;
         position: absolute;
@@ -58,13 +59,15 @@
       }
     }
     &__description{
+      display: flex;
       margin-top: 1.5rem;
       span{
         font-size: 1rem;
         font-weight: 200;
         letter-spacing: 2px;
+        margin-top: 1rem;
         text-transform: none;
-        width: 80%;
+        width: 50%;
       }
     }
     &__figures{
@@ -74,13 +77,18 @@
         display: flex;
         flex-direction: column;
         span{
+          display: flex;
+          gap: .5rem;
           color: $cor-branco;
           font-size: 2.5rem;
           font-weight: 500;
         }
         p{
+          align-items: center;
+          display: flex;
           color: $cor-cinza;
           font-size: .86rem;
+          justify-content: center;
           text-transform: uppercase;
         }
       }
@@ -96,6 +104,7 @@
         &:hover{
           background-color: $cor-azul-escuro;
           border: 3px solid transparent;
+          color: $cor-branco;
         }
       }
     }
@@ -113,6 +122,7 @@
       &:hover{
         background-color: transparent;
         border: 3px solid $cor-azul-escuro;
+        color: $cor-azul-escuro;
         cursor: pointer;
       }
     }
@@ -124,7 +134,7 @@
     position: relative;
     &__heartRate{
       align-items: center;
-      background-color: $cor-lilas;
+      background-color: $cor-azul-2;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
@@ -147,6 +157,7 @@
     &__img{
       height: 40px;
       width: 50px;
+      animation: heart-beat 1.5s linear infinite alternate;
     }
     &__frontimage{
       height: 640px;
@@ -160,9 +171,24 @@
       height: 600px;
       position: absolute;
       right: 0;
-      top: 6rem;
+      top: 7rem;
       z-index: 2;
       width: 1000px;
     }
   }
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(220px) scale(.6) ;
+  }
+  100%{
+    transform: translateX(7px) scale(1);
+  }
+}
+
+@keyframes heart-beat{
+  0%{transform: scale(1);}
+  50%{transform: scale(1.2);}
+  100%{transform: scale(.8);}
 }

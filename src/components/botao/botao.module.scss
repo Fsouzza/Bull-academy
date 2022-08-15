@@ -5,6 +5,7 @@
     border: none;
     border-radius: .5rem;
     color: #fff;
+    cursor: pointer;
     line-height: 1.2;
     text-transform: uppercase;
     display: flex;
@@ -13,10 +14,7 @@
     width: 100%;
     height: 50px;
     background: $gradient;
-    transition: all .8s;
     &:hover{
-        cursor: pointer;
-        transition: all .8s;
         background: $gradient-hover;
     }
 }

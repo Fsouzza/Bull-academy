@@ -3,10 +3,15 @@ import heart from 'assets/img/icon/heart.svg';
 import frontImg from 'assets/img/front.png';
 import background from 'assets/img/background.png';
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
+import { CgGym } from 'react-icons/cg';
+import { BiRun } from 'react-icons/bi';
+import { GiGymBag } from 'react-icons/gi';
 
 export const Home = () => {
+
   return(
-    <header className={styles.header}>
+    <div className={styles.header}>
       <div className={styles.header__left}>
         <div className={styles.header__left__ad}>
           <div></div>
@@ -30,15 +35,39 @@ export const Home = () => {
 
         <div className={styles.header__left__figures}>
           <div>
-            <span>+50</span>
+            <span>
+              <GiGymBag color='#5408FF' />
+              <CountUp 
+                start={0}
+                end={50}
+                duration={1.4}
+                prefix="+"
+              />
+            </span>
             <p>Expert Coaches</p>
           </div>
           <div>
-            <span>+1K</span>
+            <span>
+              <BiRun color='#5408FF' />
+              <CountUp 
+                start={10}
+                end={999}
+                duration={1.4}
+                prefix="+"
+              />
+            </span>
             <p>Members joined</p>
           </div>
           <div>
-            <span>+60</span>
+            <span>
+              <CgGym color='#5408FF' />
+              <CountUp 
+                start={0}
+                end={100}
+                duration={1.4}
+                prefix="+"
+              />
+            </span>
             <p>Fitness programs</p>
           </div>  
         </div>
@@ -58,6 +87,6 @@ export const Home = () => {
         <img src={frontImg} alt='' className={styles.header__right__frontimage} />
         <img src={background} alt='' className={styles.header__right__back} />
       </div>
-    </header>
+    </div>
   );
 };
