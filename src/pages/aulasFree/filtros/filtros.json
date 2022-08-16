@@ -1,0 +1,18 @@
+[
+    {
+      "label": "Cardio",
+      "id": 1
+    },
+    {
+      "label": "ABS",
+      "id": 2
+    },
+    {
+      "label": "Jump",
+      "id": 3
+    },
+    {
+      "label": "Heating",
+      "id": 4
+    }
+  ]

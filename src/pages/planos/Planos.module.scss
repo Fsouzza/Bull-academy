@@ -36,8 +36,17 @@
   padding: $padding-horizontal;
   &__card{
     background-color: $cor-cinza;
+    cursor: pointer;
     padding: $padding-horizontal;
     min-width: 320px;
+    &:nth-child(2){
+      background-color: $cor-azul-escuro;
+      color: $cor-cinza;
+      scale: 1.1;
+    }
+    &:hover{
+      box-shadow: 20px 20px 50px rgba(0, 15, 60, 0.5);
+    }
   }
   &__header{
     margin-bottom: 2rem;
@@ -46,14 +55,9 @@
     background: $cor-principal;
     border-radius: 50%;
     display: flex;
-    justify-content: flex-start;
     margin-bottom: 1.5rem;
-    padding: .5rem;
+    padding: .6rem;
     width: fit-content;
-  }
-  &__imagens{
-    height: 40px;
-    width: 40px;
   }
   &__title{
     font-size: 1.4rem;

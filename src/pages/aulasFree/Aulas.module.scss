@@ -1,0 +1,27 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.aula{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+  padding: 0 $padding-horizontal;
+  &__titulo{
+    align-items: center;
+    color: $cor-branco;
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: bold;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+  &__filtros{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

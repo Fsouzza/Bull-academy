@@ -1,10 +1,9 @@
 import styles from './Planos.module.scss';
 import { MdOutlineCheckCircle } from 'react-icons/md';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import {IoDiamond} from 'react-icons/io5';
+import { FaCrown, FaMouse } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import mouse from 'assets/img/icon/mouse-alt.svg';
-import crown from 'assets/img/icon/crown.svg';
-import diamond from 'assets/img/icon/diamond.svg';
 
 export const Planos = () =>{
   return(
@@ -21,7 +20,7 @@ export const Planos = () =>{
         <article className={styles.cards__card}>
           <div className={styles.cards__header}>
             <div className={styles.cards__shape}>
-              <img className={styles.cards__imagens} src={mouse} alt='' />
+              <FaMouse size={35} color={'#c0c0c0'} />
             </div>
             <h3 className={styles.cards__title}>Basic Packcage</h3>
             <span className={styles.cards__number}>R$ 200</span>
@@ -59,7 +58,7 @@ export const Planos = () =>{
         <article className={styles.cards__card}>
           <div className={styles.cards__header}>
             <div className={styles.cards__shape}>
-              <img className={styles.cards__imagens} src={crown} alt='' />
+              <FaCrown size={35} color={'#c0c0c0'} />
             </div>
             <h3 className={styles.cards__title}>Premiun Packcage</h3>
             <span className={styles.cards__number}>R$ 240</span>
@@ -67,23 +66,23 @@ export const Planos = () =>{
 
           <ul className={styles.cards__list}>
             <li className={styles.cards__item}>
-              <MdOutlineCheckCircle color='#038C3E' />
+              <MdOutlineCheckCircle color='#0CF25D' />
                 05 Days in a week
             </li>
             <li className={styles.cards__item}>
-              <MdOutlineCheckCircle color='#038C3E' />
+              <MdOutlineCheckCircle color='#0CF25D' />
                 01 Sweatshirt
             </li>
             <li className={styles.cards__item}>
-              <MdOutlineCheckCircle color='#038C3E' />
+              <MdOutlineCheckCircle color='#0CF25D' />
                 01 Bottle of protein
             </li>
             <li className={styles.cards__item}>
-              <MdOutlineCheckCircle color='#038C3E' />
+              <MdOutlineCheckCircle color='#0CF25D' />
                 Acsess to video
             </li>
             <li className={styles.cards__item}>
-              <MdOutlineCheckCircle color='#038C3E' />
+              <MdOutlineCheckCircle color='#0CF25D' />
                 Muscle stretching
             </li>
           </ul>
@@ -97,7 +96,7 @@ export const Planos = () =>{
         <article className={styles.cards__card}>
           <div className={styles.cards__header}>
             <div className={styles.cards__shape}>
-              <img className={styles.cards__imagens} src={diamond} alt='' />
+              <IoDiamond size={35} color={'#c0c0c0'} />
             </div>
             <h3 className={styles.cards__title}>Elite Packcage</h3>
             <span className={styles.cards__number}>R$ 420</span>

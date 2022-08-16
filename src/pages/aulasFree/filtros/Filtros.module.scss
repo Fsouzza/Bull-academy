@@ -1,0 +1,27 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.filtros {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  &__filtro {
+    align-items: center;
+    background-color: $cor-cinza;
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    font-size: 1rem;
+    height: 40px;
+    justify-content: center;
+    width: 92px;
+    &--ativo {
+      background-color: $cor-azul;
+      color: $cor-branco;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

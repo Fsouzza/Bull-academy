@@ -7,7 +7,7 @@ export const Menu = () =>{
     label: 'Home',
     to: '/'
   }, {
-    label: 'treinos',
+    label: 'Treinos',
     to: '/treinos'
   }, {
     label: 'Planos',
