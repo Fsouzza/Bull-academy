@@ -3,6 +3,7 @@ import styles from './Aulas.module.scss';
 import { Buscador } from './buscador';
 import { Filtros } from './filtros';
 import { Ordenador } from './ordenador';
+import { Videos } from './videos';
 
 export const AulasFree = () =>{
   const [busca, setBusca] = useState('');
@@ -20,6 +21,7 @@ export const AulasFree = () =>{
         <Filtros filtro={filtro} setFiltro={setFiltro} />
         <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
       </div>
+      <Videos busca={busca} filtro={filtro} ordenador={ordenador} />
     </section>
   );
 };

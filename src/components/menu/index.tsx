@@ -7,17 +7,14 @@ export const Menu = () =>{
     label: 'Home',
     to: '/'
   }, {
-    label: 'Treinos',
-    to: '/treinos'
-  }, {
     label: 'Planos',
     to: '/planos'
   }, {
+    label: 'Treinos',
+    to: '/treinos'
+  }, {
     label: 'Sobre',
     to: '/sobre'
-  }, {
-    label: 'Contato',
-    to: '/contato'
   }];
 
   return (
