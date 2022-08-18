@@ -73,7 +73,7 @@ export const Banner = () => {
         </div>
 
         <div className={styles.header__left__buttons}>
-          <Link className={styles.header__left__btn} to='/exercicios'>Get Started</Link>
+          <Link className={styles.header__left__btn} to='/treinos'>Get Started</Link>
           <Link className={styles.header__left__btn} to='/planos'>To sign</Link>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export const Planos = () =>{
   return(
-    <>
+    <section>
       <div className={styles.planos}>
         <h2 className={styles.planos__subtitle}>Pricing</h2>
         <div className={styles.planos__title}>
@@ -50,8 +50,10 @@ export const Planos = () =>{
           </ul>
 
           <Link to='/register' className={styles.cards__button}>
-            Purchase
-            <AiOutlineArrowRight />
+              Purchase
+            <div>
+              <AiOutlineArrowRight />
+            </div>
           </Link>
         </article>
 
@@ -89,7 +91,9 @@ export const Planos = () =>{
 
           <Link to='/register' className={styles.cards__button}>
               Purchase
-            <AiOutlineArrowRight />
+            <div>
+              <AiOutlineArrowRight />
+            </div>
           </Link>
         </article>
 
@@ -127,11 +131,13 @@ export const Planos = () =>{
 
           <Link to='/register' className={styles.cards__button}>
               Purchase
-            <AiOutlineArrowRight />
+            <div>
+              <AiOutlineArrowRight />
+            </div>
           </Link>
         </article>
       </div>
   
-    </>
+    </section>
   );
 };

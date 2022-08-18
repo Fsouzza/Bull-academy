@@ -1,6 +1,7 @@
 import { PagePadrao } from 'components/pagePadrao';
 import { AulasFree } from 'pages/aulasFree/aulasFree';
 import { Home } from 'pages/home/home';
+import { NotFound } from 'pages/notFound/notFound';
 import { Planos } from 'pages/planos/planos';
 import { Sobre } from 'pages/sobre/sobre';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -19,6 +20,7 @@ export const AppRouter = () =>{
         </Route>
         <Route path='/login' element={<Login />}/>
         <Route path='/register' element={<Register />}/>
+        <Route path='*' element={<NotFound />}/>
       </Routes>
     </Router>
   );

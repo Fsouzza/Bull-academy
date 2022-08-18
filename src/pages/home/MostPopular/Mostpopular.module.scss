@@ -1,0 +1,74 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.populares{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 8rem;
+  &__subtitulo{
+    display: flex;
+    color: $cor-azul-escuro;
+    font-size: 2.2rem;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  &__titulo{
+    color: $cor-branco;
+    display: flex;
+    flex-direction: row;
+    font-size: 3.5rem;
+    font-weight: bold;
+    gap: 1rem;
+    text-overflow: inherit;
+    text-transform: uppercase;
+  }
+}
+
+.imagens{
+  opacity: 0.55;
+  display: block;
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.tituloVideo{
+  border-left: 6px solid $cor-azul;
+  bottom: 8rem;
+  color: $cor-branco-2;
+  font-size: 2.5rem;
+  left: 4rem;
+  padding-left: 1rem;
+  position: absolute;
+}
+
+.botoes{
+  bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+  left: 4rem;
+  position: absolute;
+  &__botao{
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid $cor-branco-2;
+    cursor: pointer;
+    color: $cor-branco-2;
+    display: flex;
+    font-weight: 500;
+    gap: .5rem;
+    justify-content: center;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    width: 180px;
+    &:first-child{
+      border: none;
+      background-color: $cor-azul;
+      color: $cor-branco;
+    }
+  }
+}
