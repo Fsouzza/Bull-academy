@@ -1,4 +1,5 @@
 import videos from 'data/videos.json';
+import { Aula } from 'types/videos';
 import { useEffect, useState } from 'react';
 import { Video } from './video';
 import styles from './Videos.module.scss';
@@ -23,7 +24,7 @@ export const Videos = (props: Props) => {
     return true;
   }
 
-  function ordenar(novaLista: typeof videos){
+  function ordenar(novaLista: Aula){
     switch(ordenador){
     case 'titulo': 
       return novaLista.sort((a, b) => a.title > b.title ? 1 : -1);

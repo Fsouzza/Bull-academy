@@ -5,11 +5,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 import {FaPlay, FaPlus} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
+import { Player } from 'types/videos';
 
 export const Recomendados = ()=>{
   let videosRecomendados = [...videos];
-  videosRecomendados = videosRecomendados.sort(()=> 0.5 - Math.random()).splice(0,3);
+  videosRecomendados = videosRecomendados.sort(()=> 0.5 - Math.random()).splice(0,4);
+  const navigate = useNavigate();
+
+  function RedirecionarParaAssistir(player: Player){
+    navigate(`/video/${player.id}`, {state: {videos}, replace: true});
+  }
 
   return(
     <section>
@@ -18,7 +24,7 @@ export const Recomendados = ()=>{
           Most Popular
         </h2>
         <div className={styles.populares__titulo}>
-          <span className='stroke-text'>recommended</span>
+          <span className='stroke-text'>Recommended</span>
           <span>videos</span>
         </div>
       </div>
@@ -31,10 +37,10 @@ export const Recomendados = ()=>{
               {item.title}
             </h4>
             <div className={styles.botoes}>
-              <Link to='' className={styles.botoes__botao}>
+              <button className={styles.botoes__botao} onClick={()=> RedirecionarParaAssistir(item)}>
                 <FaPlay />
                 Watch Now
-              </Link>
+              </button>
               <Link to='/treinos' className={styles.botoes__botao}>
                 <FaPlus />
                 See More

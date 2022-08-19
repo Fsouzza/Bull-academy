@@ -1,8 +1,10 @@
 import styles from './Notfound.module.scss';
 import notFoundImage from 'assets/img/logoError.png';
-import { Link } from 'react-router-dom';
+import { BotaoVoltar } from 'components/btnBack';
 
 export const NotFound = () => {
+  
+
   return(
     <section className={styles.erro}>
       <div className={styles.esquerda}>
@@ -13,9 +15,7 @@ export const NotFound = () => {
           <br />
           Unfortunately, that is all we know.
         </p>
-        <Link className={styles.esquerda__botao} to='/'>
-            Go Back
-        </Link>
+        <BotaoVoltar />
       </div>
 
       <figure className={styles.direita}>

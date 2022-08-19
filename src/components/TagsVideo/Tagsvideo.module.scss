@@ -1,0 +1,21 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.tags{
+  align-items: center;
+  color: $cor-branco-2;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  &__categoria,&__tempo,&__canal{
+    border: 1px solid $cor-cinza;
+    border-radius: .5rem;
+    font-size: .9rem;
+    padding: .1rem .5rem;
+  }
+  &__valor{
+    color: $cor-branco;
+    background-color: $cor-verde;
+    padding: .1rem .5rem;
+  }
+  }

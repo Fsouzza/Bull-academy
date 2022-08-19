@@ -24,22 +24,6 @@
   p{
     font-size: 1.2rem;
   }
-  &__botao{
-    background: $cor-azul-escuro;
-    border: none;
-    border-radius: 2.5rem;
-    color: $cor-branco;
-    display: inline-block;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    padding: .8rem 1.5rem;
-    text-align: center;
-    transition: .4s;
-    width: 33%;
-    &:hover{
-      box-shadow: 0 4px 12px hsla(38, 69%, 8%, .6);
-    }
-  }
 }
 
 .direita{

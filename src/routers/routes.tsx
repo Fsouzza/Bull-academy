@@ -3,6 +3,7 @@ import { AulasFree } from 'pages/aulasFree/aulasFree';
 import { Home } from 'pages/home/home';
 import { NotFound } from 'pages/notFound/notFound';
 import { Planos } from 'pages/planos/planos';
+import { Player } from 'pages/player/player';
 import { Sobre } from 'pages/sobre/sobre';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Login } from '../pages/login/login';
@@ -21,6 +22,7 @@ export const AppRouter = () =>{
         <Route path='/login' element={<Login />}/>
         <Route path='/register' element={<Register />}/>
         <Route path='*' element={<NotFound />}/>
+        <Route path='video/:id' element={<Player />}/>
       </Routes>
     </Router>
   );
