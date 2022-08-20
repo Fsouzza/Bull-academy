@@ -42,7 +42,7 @@ export const Footer = () =>{
       </div>
 
       <div className={styles.footer__copyright}>
-        <small>&copy; Mr Yeagger. All right reserved.</small>
+        <small>&copy; Mr Yeagger. Todos os direitos reservados.</small>
       </div>
     </footer>
   );

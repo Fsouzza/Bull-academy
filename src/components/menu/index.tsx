@@ -20,7 +20,7 @@ export const Menu = () =>{
   return (
     <nav className={styles.menu}>
       <div>
-        <img className={styles.menu__imagem} src={logo} alt="" />
+        <img className={styles.menu__image} src={logo} alt="" />
         <h1>Bull <br /> Fitness</h1>
       </div>
       <ul className={styles.menu__list}>
@@ -33,7 +33,7 @@ export const Menu = () =>{
         ))}
       </ul>
       <Link className={styles.menu__btn} to='/login'>
-          Login
+          Acessar
       </Link>
     </nav>
   );

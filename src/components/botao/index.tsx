@@ -8,7 +8,7 @@ interface Props{
 
 function Botao({onClick, type, children}: Props){
   return (
-    <button onClick={onClick} type={type} className={styles.loginFormBtn}>
+    <button onClick={onClick} type={type} className={styles.btnLogin}>
       {children}
     </button>
   );

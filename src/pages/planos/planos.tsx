@@ -9,10 +9,10 @@ export const Planos = () =>{
   return(
     <section>
       <div className={styles.planos}>
-        <h2 className={styles.planos__subtitle}>Pricing</h2>
+        <h2 className={styles.planos__subtitle}>Planos</h2>
         <div className={styles.planos__title}>
-          <span className='stroke-text'>Choose</span>
-          <span>Our Special Plan</span>
+          <span className='stroke-text'>Escolha</span>
+          <span>Nossos pacotes</span>
         </div>
       </div>
 
@@ -22,35 +22,35 @@ export const Planos = () =>{
             <div className={styles.cards__shape}>
               <FaMouse size={35} color={'#c0c0c0'} />
             </div>
-            <h3 className={styles.cards__title}>Basic Packcage</h3>
-            <span className={styles.cards__number}>R$ 200</span>
+            <h3 className={styles.cards__title}>Pacote Básico</h3>
+            <span className={styles.cards__number}>R$ 150</span>
           </div>
 
           <ul className={styles.cards__list}>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-              05 Days in a week
+              02 aulas por semana
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-              01 Sweatshirt
+              01 kit de roupa
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-              01 Bottle of protein
+              01 Garrafa de Proteína
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-              Acsess to video
+              Acessos aos videos
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-              Muscle stretching
+              Guia de alongamento
             </li>
           </ul>
 
           <Link to='/register' className={styles.cards__button}>
-              Purchase
+              Assinar
             <div>
               <AiOutlineArrowRight />
             </div>
@@ -62,35 +62,35 @@ export const Planos = () =>{
             <div className={styles.cards__shape}>
               <FaCrown size={35} color={'#c0c0c0'} />
             </div>
-            <h3 className={styles.cards__title}>Premiun Packcage</h3>
-            <span className={styles.cards__number}>R$ 240</span>
+            <h3 className={styles.cards__title}>Pacote Elite</h3>
+            <span className={styles.cards__number}>R$ 220</span>
           </div>
 
           <ul className={styles.cards__list}>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#0CF25D' />
-                05 Days in a week
+                03 aulas por semana
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#0CF25D' />
-                01 Sweatshirt
+                01 kit + Garrafa
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#0CF25D' />
-                01 Bottle of protein
+                01 Suplemento Whey
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#0CF25D' />
-                Acsess to video
+                Acesso aos videos
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#0CF25D' />
-                Muscle stretching
+                Aulas Exclusivas
             </li>
           </ul>
 
           <Link to='/register' className={styles.cards__button}>
-              Purchase
+              Assinar
             <div>
               <AiOutlineArrowRight />
             </div>
@@ -102,35 +102,35 @@ export const Planos = () =>{
             <div className={styles.cards__shape}>
               <IoDiamond size={35} color={'#c0c0c0'} />
             </div>
-            <h3 className={styles.cards__title}>Elite Packcage</h3>
+            <h3 className={styles.cards__title}>Pacote Diamante</h3>
             <span className={styles.cards__number}>R$ 420</span>
           </div>
 
           <ul className={styles.cards__list}>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-                05 Days in a week
+                05 Aulas por semana
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-                01 Sweatshirt
+                01 kit musculação
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-                01 Bottle of protein
+                Acesso aulas premium
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-                Acsess to video
+                Treinos online
             </li>
             <li className={styles.cards__item}>
               <MdOutlineCheckCircle color='#038C3E' />
-                Muscle stretching
+                Acompanhamento nutricional
             </li>
           </ul>
 
           <Link to='/register' className={styles.cards__button}>
-              Purchase
+              Assinar
             <div>
               <AiOutlineArrowRight />
             </div>

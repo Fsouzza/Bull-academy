@@ -2,8 +2,81 @@
 @import "styles/breakpoints";
 
 .newsletter{
+  background-color: $cor-principal;
+  border-radius: 1rem;
   align-items: center;
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 3rem;
   justify-content: center;
+  margin: 8rem auto;
+  padding: 6rem 4rem;
+  width: 70%;
+  &__esquerda{
+    align-items: flex-start;
+    color: $cor-cinza;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    :first-child{
+      color: $cor-branco;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      span{
+        color: $cor-azul;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+    :last-child{
+      font-size: 1rem;
+    }
+  }
+  &__direita{
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    input{
+      background: transparent;
+      border-bottom: 3px solid $cor-azul-escuro;
+      border-left: 3px solid $cor-azul-escuro;
+      border-right: none;
+      border-top: 3px solid $cor-azul-escuro;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      color: $cor-cinza;
+      height: 2.4rem;
+      padding-left: .8rem;
+      outline: none;
+      width: 250px;
+      &:focus{
+        border-color: $cor-azul;
+      }
+    }
+    button{
+      background: $cor-azul-escuro;
+      border: none;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      color: $cor-cinza;
+      font-weight: 500;
+      gap: 2rem;
+      height: 2.4rem;
+      text-transform: uppercase;
+      width: 120px;
+      &:hover{
+        background: $cor-azul;
+      }
+      div{
+        align-items: center;
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+      }
+    }
+  }
 }

@@ -21,11 +21,11 @@ export const Recomendados = ()=>{
     <section>
       <div className={styles.populares}>
         <h2 className={styles.populares__subtitulo}>
-          Most Popular
+          Mais populares
         </h2>
         <div className={styles.populares__titulo}>
-          <span className='stroke-text'>Recommended</span>
-          <span>videos</span>
+          <span className='stroke-text'>Videos</span>
+          <span>Recomendados</span>
         </div>
       </div>
 
@@ -39,11 +39,11 @@ export const Recomendados = ()=>{
             <div className={styles.botoes}>
               <button className={styles.botoes__botao} onClick={()=> RedirecionarParaAssistir(item)}>
                 <FaPlay />
-                Watch Now
+                Assista Agora
               </button>
               <Link to='/treinos' className={styles.botoes__botao}>
                 <FaPlus />
-                See More
+                Veja Mais
               </Link>
             </div>
           </SwiperSlide>

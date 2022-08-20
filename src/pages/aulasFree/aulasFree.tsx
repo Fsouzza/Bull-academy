@@ -13,8 +13,8 @@ export const AulasFree = () =>{
   return(
     <section className={styles.aula}>
       <h3 className={styles.aula__titulo}>
-        <span className='stroke-text'>Daily</span>
-         Workouts
+        <span className='stroke-text'>Exercícios</span>
+         Diários
       </h3>
       <Buscador busca={busca} setBusca={setBusca} />
       <div className={styles.aula__filtros}>

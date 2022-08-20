@@ -7,13 +7,13 @@
   display: flex;
   gap: 2rem;
   justify-content: flex-start;
-  &__categoria,&__tempo,&__canal{
+  &__category,&__time,&__chanel{
     border: 1px solid $cor-cinza;
     border-radius: .5rem;
     font-size: .9rem;
     padding: .1rem .5rem;
   }
-  &__valor{
+  &__price{
     color: $cor-branco;
     background-color: $cor-verde;
     padding: .1rem .5rem;

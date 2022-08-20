@@ -15,20 +15,20 @@ export const Banner = () => {
       <div className={styles.header__left}>
         <div className={styles.header__left__ad}>
           <div></div>
-          <span>The best fitness club in the town</span>
+          <span>A melhor academia de toda a cidade</span>
         </div>
 
         <div className={styles.header__left__text}>
           <div>
             <span className='stroke-text'>Shape </span>
-            <span>Your</span>
+            <span>Seu</span>
           </div>
           <div>
-            <span>Ideal body</span>
+            <span>Corpo Online</span>
           </div>
           <div className={styles.header__left__description}>
             <span>
-              In here we will help you to shape and build your idel body and live up your life to fullest
+              Aqui vamos ajudá-lo a moldar e construir seu corpo ideal e viver sua vida ao máximo
             </span>
           </div>
         </div>
@@ -44,7 +44,7 @@ export const Banner = () => {
                 prefix="+"
               />
             </span>
-            <p>Expert Coaches</p>
+            <p>Personal trainers</p>
           </div>
           <div>
             <span>
@@ -56,7 +56,7 @@ export const Banner = () => {
                 prefix="+"
               />
             </span>
-            <p>Members joined</p>
+            <p>Membros cadastrados</p>
           </div>
           <div>
             <span>
@@ -68,13 +68,13 @@ export const Banner = () => {
                 prefix="+"
               />
             </span>
-            <p>Fitness programs</p>
+            <p>Exercicios diferentes</p>
           </div>  
         </div>
 
         <div className={styles.header__left__buttons}>
-          <Link className={styles.header__left__btn} to='/treinos'>Get Started</Link>
-          <Link className={styles.header__left__btn} to='/planos'>To sign</Link>
+          <Link className={styles.header__left__btn} to='/treinos'>Iniciar</Link>
+          <Link className={styles.header__left__btn} to='/planos'>Assinatura</Link>
         </div>
       </div>
 

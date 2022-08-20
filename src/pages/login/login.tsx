@@ -51,7 +51,7 @@ export const Login = () =>{
                 />
                 <span
                   className={styles.input__focus}
-                  data-placeholder="Password"
+                  data-placeholder="Senha"
                 ></span>
               </div>
 

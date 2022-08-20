@@ -139,7 +139,7 @@ export const Register = () => {
         </div>
 
         <div className={styles2.containerLogin__btn}>
-          <Botao onClick={validate}>Next </Botao>
+          <Botao onClick={validate}>Cadastrar </Botao>
         </div>
 
         <div className={styles2.text__center}>

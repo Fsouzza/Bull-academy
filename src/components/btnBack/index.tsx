@@ -5,10 +5,10 @@ export const BotaoVoltar = () =>{
   const navigate = useNavigate();
 
   return(
-    <button className={styles.botao}
+    <button className={styles.button}
       onClick={() => navigate(-1)}
     >
-      Go Back
+      Voltar
     </button>
   );
 };

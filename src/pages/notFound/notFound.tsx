@@ -8,12 +8,12 @@ export const NotFound = () => {
   return(
     <section className={styles.erro}>
       <div className={styles.esquerda}>
-        <span  className={styles.esquerda__txt1}>Error 404</span>
-        <span className={styles.esquerda__txt2}>OOPS!... PAGE NOT FOUND</span>
-        <h3 className='stroke-text'>Hey Buddy,</h3>
-        <p className={styles.esquerda__descricao}>We can not seem to find the page you request.
+        <span  className={styles.esquerda__txt1}>Erro 404</span>
+        <span className={styles.esquerda__txt2}>OOPS!... PAGINA NÃO ENCONTRADA</span>
+        <h3 className='stroke-text'>Ei Amigo,</h3>
+        <p className={styles.esquerda__descricao}>Houve um problema ao carregar a página selecionada.
           <br />
-          Unfortunately, that is all we know.
+          Infelizmente, isso é tudo que sabemos.
         </p>
         <BotaoVoltar />
       </div>

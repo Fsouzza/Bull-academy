@@ -24,8 +24,8 @@ export const Player = () =>{
               <BotaoVoltar />
             </div>
             <h2 className={styles.videoAula__titulo}>
-              <span className='stroke-text'>today&#39;s</span>
-              <span>lesson</span>
+              <span className='stroke-text'>Lição</span>
+              <span>de hoje</span>
             </h2>
             <ReactPlayer url={player.video} controls={true} width={900} height={500}/>
             <div className={styles.videoAula__subtitulo}>

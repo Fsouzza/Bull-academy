@@ -9,16 +9,16 @@ export const TagsVideo = ({
 }: Player) =>{
   return(
     <div className={styles.tags}>
-      <div className={styles.tags__categoria}>
+      <div className={styles.tags__category}>
         {category.label}
       </div>
-      <div className={styles.tags__canal}>
+      <div className={styles.tags__chanel}>
         {canal}
       </div>
-      <div className={styles.tags__tempo}>
+      <div className={styles.tags__time}>
         {time} minutos
       </div>
-      <div className={styles.tags__valor}>
+      <div className={styles.tags__price}>
         {price}
       </div>
     </div>
