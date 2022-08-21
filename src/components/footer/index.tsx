@@ -4,6 +4,7 @@ import styles from './Footer.module.scss';
 import {FaFacebook} from 'react-icons/fa';
 import {IoLogoTwitter} from 'react-icons/io';
 import {FiInstagram} from 'react-icons/fi';
+import {BiSupport} from 'react-icons/bi';
 
 
 export const Footer = () =>{
@@ -36,9 +37,12 @@ export const Footer = () =>{
       </ul>
 
       <div className={styles.footer__socials}>
-        <a href='https://www.facebook.com'><FaFacebook /></a>
-        <a href='https://www.instagram.com'><FiInstagram /></a>
-        <a href='https://twitter.com'><IoLogoTwitter /></a>
+        <a href='https://www.facebook.com' title='Link Facebbok'><FaFacebook /></a>
+        <a href='https://www.instagram.com' title='Link Instagram'><FiInstagram /></a>
+        <a href='https://twitter.com' title='Link Twitter'><IoLogoTwitter /></a>
+        <Link to='' title='Suporte Online ao Cliente'>
+          <BiSupport />
+        </Link>
       </div>
 
       <div className={styles.footer__copyright}>

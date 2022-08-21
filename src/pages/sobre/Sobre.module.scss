@@ -1,0 +1,141 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.titulo{
+  align-items: center;
+  color: $cor-branco;
+  display: flex;
+  font-size: 3rem;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 12rem;
+  text-transform: uppercase;
+}
+
+.empresaCard{
+  background: $gradient;
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  &__conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    span{
+      color: $cor-branco;
+      font-size: 8rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      text-align: right;
+    }
+    p{
+      color: $cor-cinza;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      text-align: right;
+    }
+  }
+  &__imagem{
+    filter: drop-shadow(12px 12px 10px rgba(0,0,0,.6)) hue-rotate(45deg);
+    position: relative;
+    right: -8rem;
+    top: -8rem;
+  }
+}
+
+.historiaCard{
+  align-items: center;
+  background-color: transparent;
+  color: $cor-borda-cinza;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 3rem;
+  justify-content: center;
+  margin: 10rem auto;
+  width: 50%;
+  &__logo{
+    height: 100px;
+    width: 120px;
+  }
+}
+
+.resumoCard{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  &__quadro{
+    align-items: center;
+    background-color: $cor-azul-2;
+    color: $cor-borda-cinza;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    min-width: 200px;
+    span{
+      color: $cor-cinza;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.endereco{
+  
+  &__titulo{
+    align-items: center;
+    color: $cor-branco;
+    display: flex;
+    font-size: 3rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+  &__address{
+    background: $gradient;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 4rem 0;
+    iframe{
+      border: none;
+      opacity: .8;
+      transition: .7s ease;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  &__cardAddress{
+    align-items: flex-start;
+    color: $cor-cinza;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    justify-content: center;
+    h4{
+      color: $cor-branco;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+    span{
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+    p{
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+}

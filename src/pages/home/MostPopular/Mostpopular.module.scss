@@ -29,10 +29,11 @@
 }
 
 .imagens{
-  opacity: 0.55;
   display: block;
   height: 600px;
   object-fit: cover;
+  object-position: center;
+  opacity: 0.55;
   width: 100%;
 }
 

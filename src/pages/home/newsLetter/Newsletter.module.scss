@@ -1,16 +1,29 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
+.titulo{
+  align-items: center;
+  color: $cor-branco;
+  display: flex;
+  flex-direction: row;
+  font-size: 3.25rem;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 10rem;
+  text-overflow: inherit;
+  text-transform: uppercase;
+}
+
 .newsletter{
   background-color: $cor-principal;
   border-radius: 1rem;
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 6rem;
   justify-content: center;
-  margin: 8rem auto;
   padding: 6rem 4rem;
+  margin: 3rem auto 10rem auto;
   width: 70%;
   &__esquerda{
     align-items: flex-start;
@@ -18,6 +31,7 @@
     display: flex;
     flex-direction: column;
     font-size: 1.8rem;
+    font-weight: 500;
     flex-wrap: wrap;
     justify-content: center;
     width: fit-content;
@@ -27,7 +41,7 @@
       text-transform: uppercase;
       span{
         color: $cor-azul;
-        font-size: 1.8rem;
+        font-size: 1.86rem;
         font-weight: bold;
       }
     }
@@ -67,7 +81,8 @@
       gap: 2rem;
       height: 2.4rem;
       text-transform: uppercase;
-      width: 120px;
+      transition: .7s ease;
+      width: 220px;
       &:hover{
         background: $cor-azul;
       }

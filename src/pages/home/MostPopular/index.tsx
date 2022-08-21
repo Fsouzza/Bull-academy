@@ -43,7 +43,7 @@ export const Recomendados = ()=>{
               </button>
               <Link to='/treinos' className={styles.botoes__botao}>
                 <FaPlus />
-                Veja Mais
+                Ver Mais
               </Link>
             </div>
           </SwiperSlide>
