@@ -45,11 +45,23 @@
       color: $cor-cinza;
       cursor: pointer;
       font-size: 1.1rem;
-      font-weight: 600;
+      font-weight: 400;
       text-decoration: none;
+      text-transform: uppercase;
       transition: .2s ease;
       &:hover {
         color: $cor-azul-escuro;
+      }
+      &::after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $cor-azul-escuro;
+        transition: width 0.4s;
+      }
+      &:hover::after {
+        width: 100%;
       }
     }
   }
