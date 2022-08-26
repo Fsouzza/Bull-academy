@@ -2,156 +2,154 @@
 @import "styles/breakpoints";
 
 .form{
-    width: 100%;
-    &__title{
-        color: $cor-branco;
-        display: block;
-        font-size: 1.6rem;
-        line-height: 1.2;
-        text-align: center;
-        position: relative;;
-        width: max-content;
-        margin: 0 auto 1rem auto;
-        &:nth-child(2){
-            margin-bottom: 3.4rem;
-        }
-        &:nth-child(2)::before{
-            content: '';
-            position: absolute;
-            height: 4px;
-            width: 22px;
-            bottom: -2px;
-            left: 0;
-            border-radius: 30%;
-            background-color: $cor-azul;
-        }
-        img{
-            width: 90px;
-        
-            @media (max-width: $mobile_sm){
-                margin-bottom: 1.4rem;
-            }
-            
-        }
+  width: 100%;
+  &__title{
+    color: $cor-branco;
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0 auto 1rem auto;
+    &:nth-child(2){
+      margin-bottom: 3.4rem;
     }
+    position: relative;;
+    text-align: center;
+    width: max-content;
+    &:nth-child(2)::before{
+      background-color: $cor-azul;
+      border-radius: 30%;
+      bottom: -2px;
+      content: '';
+      height: 4px;
+      left: 0;
+      position: absolute;
+      width: 22px;
+    }
+    img{
+      width: 90px;
+      @media (max-width: $mobile_sm){
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
 }
 
 .input{
-    font-size: 1rem;
-    color: $cor-branco;
-    line-height: 1.1;
-    border: none;
-    display: block;
+  background-color: transparent;
+  border: none;
+  color: $cor-branco;
+  display: block;
+  font-size: 1rem;
+  height: 45px;
+  line-height: 1.1;
+  padding: 0 5px;
+  width: 100%;
+  &:focus{
+  outline: none;
+  }
+  &__wrap{
+    border-bottom: .1rem solid $cor-borda-cinza;
+    margin-bottom: 2.4rem;
+    position: relative;
     width: 100%;
-    height: 45px;
-    background-color: transparent;
-    padding: 0 5px;
-    &:focus{
-    outline: none;
-}
-    &__wrap{
-        width: 100%;
-        position: relative;
-        border-bottom: .1rem solid $cor-borda-cinza;
-        margin-bottom: 2.4rem;
+  }
+  &__wrap2{
+    margin-bottom: 1rem;
+  }
+  &__focus{
+    color: $cor-borda-cinza;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    &::before{
+      background: $gradient;
+      bottom: -2px;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: all .4s;
+      width: 0;
     }
-    &__wrap2{
-        margin-bottom: 1rem;
+    &::after{
+      color: $cor-cinza;
+      content: attr(data-placeholder);
+      display: block;
+      font-size: 1rem;
+      left: 0px;
+      line-height: 1.2;
+      padding-left: 5px;
+      position: absolute;
+      top: 16px;
+      transition: all .4s;
+      width: 100%;
     }
-    &__focus{
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        color: $cor-borda-cinza;
-        &::before{
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            transition: all .4s;
-            background: $gradient;
-        }
-        &::after{
-            font-size: 1rem;
-            color: $cor-cinza;
-            line-height: 1.2;
-            content: attr(data-placeholder);
-            display: block;
-            width: 100%;
-            position: absolute;
-            top: 16px;
-            left: 0px;
-            padding-left: 5px;
-            transition: all .4s;
-        }
-    }
+  }
 }
 
 .input:focus + .input__focus::after{
-    top: -16px;
+  top: -16px;
 }
 
 .input:focus + .input__focus::before{
-    width: 100%;
+  width: 100%;
 }
 
 .hasVal + .input__focus::after{
-    top: -16px;
+  top: -16px;
 }
 
 .hasVal + .input__focus::after{
-    width: 100%;
+  width: 100%;
 }
 
 .forgot{
-    width: 100%;
-    position: relative;
-    display: flex;
-    margin-bottom: 2.4rem;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.4rem;
+  position: relative;
+  width: 100%;
 }
 
 .containerLogin__btn{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .text__center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .txt{
-    text-decoration: none;
+  line-height: 1.5;
+  text-decoration: none;
+  &__1{
+    color: $cor-cinza;
+    font-size: .9rem;
     line-height: 1.5;
-    &__1{
-        font-size: .9rem;
-        color: $cor-cinza;
-        line-height: 1.5;
-        padding-right: 1rem;
-    }
-    &__2{
-        font-size: 1rem;
-        color: $cor-azul-escuro; 
-    }
-    &__3{
-        font-size: .8rem;
-        color: $cor-cinza;
-        line-height: 1.2;
-        padding-bottom: 1rem;
-        text-align: right;
-    }
+    padding-right: 1rem;
+  }
+  &__2{
+    color: $cor-azul-escuro; 
+    font-size: 1rem;
+  }
+  &__3{
+    color: $cor-cinza;
+    font-size: .8rem;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    text-align: right;
+  }
 }
 
 

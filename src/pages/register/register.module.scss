@@ -1,48 +1,48 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-.formInputs{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    margin-bottom: 1rem;
-    label{
-        color: $cor-cinza;
-        padding: 0 5px;
-        margin-bottom: 3px;
-    }
-    &:nth-child(5){
-        margin-bottom: 2.6rem;
-    }
+.formInputs {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	position: relative;
+	width: 100%;
+	label {
+		color: $cor-cinza;
+		margin-bottom: 3px;
+		padding: 0 5px;
+	}
+	&:nth-child(5) {
+		margin-bottom: 2.6rem;
+	}
 }
 
-.inputs{
-    font-size: 1rem;
-    color: $cor-branco;
-    line-height: 1.3;
-    border: none;
-    display: block;
-    width: 100%;
-    height: 2rem;
-    background-color: $cor-preta;
-    padding: 0 5px;
-    outline: none;
-    border-radius: .2rem;
-    &__error{
-        border: 1px solid rgb(179, 6, 6);
-        background-image: url('../../assets/img/icon/exclamation-triangle.svg');
-        background-repeat: no-repeat;
-        background-position: 96% center;
-        background-size: 20px 20px;
-        color: rgb(224, 75, 75);
-        padding: 0 5px;
-    }
+.inputs {
+	background-color: $cor-preta;
+	border: none;
+	border-radius: 0.2rem;
+	color: $cor-branco;
+	display: block;
+	font-size: 1rem;
+	height: 2rem;
+	line-height: 1.3;
+	outline: none;
+	padding: 0 5px;
+	width: 100%;
+	&__error {
+    background-image: url("../../assets/img/icon/exclamation-triangle.svg");
+		background-repeat: no-repeat;
+		background-position: 96% center;
+		background-size: 20px 20px;
+		border: 1px solid rgb(179, 6, 6);
+		color: rgb(224, 75, 75);
+		padding: 0 5px;
+	}
 }
 
-.erroRegex{
-    color: rgb(185, 12, 12);
-    font-size: .84rem;
-    line-height: 1.1;
-    padding-left: 5px;
+.erroRegex {
+	color: rgb(185, 12, 12);
+	font-size: 0.84rem;
+	line-height: 1.1;
+	padding-left: 5px;
 }
