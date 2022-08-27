@@ -13,7 +13,7 @@
   padding: 0 1rem;
   width: 400px;
   @media (max-width: $mobile) {
-    width: 100%;
+    max-width: 100%;
   }
   input {
     background-color: transparent;

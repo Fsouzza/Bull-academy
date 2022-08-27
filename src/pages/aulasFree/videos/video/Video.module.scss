@@ -9,6 +9,13 @@
   padding: 20px;
   transition: linear .5s;
   width: 100%;
+  @media (max-width: $mobile-sm) {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    width: 100%;
+  }
   &:hover {
     background-color: $cor-preta-2;
     transform: scale(1);
@@ -21,42 +28,64 @@
   }
   &__imagem {
     position: relative;
-    min-width: 240px;
-    @media (max-width: $desktop_xsm) {
-      width: 100%;
+    @media (max-width: $mobile_sm) {
+      max-width: 100vw;
+    }
+    @media (min-width: $desktop_xsm) {
+      min-width: 240px;
+      width: 290px;
     }
     img {
       border-radius: 8px;
       height: 200px;
       opacity: 0.6;
-      width: 300px;
+      width: 290px;
+      @media (max-width: $mobile_sm) {
+        min-width: 355px;
+      }
     }
   }
   &__play{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-20%,-50%);
+    right: 50%;
+    transform: translate(82%,-50%);
     color: $cor-azul;
+    @media (max-width: $mobile_sm) {
+      transform: translate(50%,-50%);
+    }
   }
   &__descricao {
-    align-items: flex-start;
+    align-items: center;
     color: $cor-cinza;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0 20px 0 70px;
-    @media (max-width: $desktop_xsm) {
+    @media (max-width: $mobile_sm) {
+      align-items: flex-start;
+      justify-content: left;
+      margin: 0;
+    }
+    @media (min-width: $desktop_xsm) {
       flex-direction: row;
-      margin-top: 20px;
+      margin: 0 20px 0 90px;
       padding: 0;
     }
     h2{
       color: $cor-branco;
       font-size: 1.5rem;
-      font-weight: bold;
+      font-weight: 500;
       margin-bottom: 20px;
-      width: fit-content;
+      width: max-content;
+      @media (max-width: $mobile_sm) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: .2rem 0;
+        width: fit-content;
+      }
     }
     p {
       color: $cor-cinza;
@@ -64,23 +93,9 @@
       font-weight: 500;
       max-width: 600px;
       margin-bottom: 20px;
+      @media (max-width: $mobile_sm) {
+        display: none;
+      }
     }
-  }
-  &__tags{
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
-  }
-  &__categoria,&__tempo,&__canal{
-    border: 1px solid $cor-cinza;
-    border-radius: .5rem;
-    font-size: .9rem;
-    padding: .1rem .5rem;
-  }
-  &__valor{
-    color: $cor-branco;
-    background-color: $cor-verde;
-    padding: .1rem .5rem;
   }
 }

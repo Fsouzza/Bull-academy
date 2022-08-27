@@ -1,6 +1,7 @@
 import logo from '../../assets/img/foxLogo.png';
 import styles from './Menu.module.scss';
 import { Link } from 'react-router-dom';
+import { FiLock } from 'react-icons/fi';
 
 export const Menu = () =>{
   const rotas = [{
@@ -34,6 +35,9 @@ export const Menu = () =>{
       </ul>
       <Link className={styles.menu__btn} to='/login'>
           Acessar
+      </Link>
+      <Link className={styles.menu__lock} to='/login'>
+        <FiLock />
       </Link>
     </nav>
   );

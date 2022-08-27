@@ -3,15 +3,22 @@
 
 .header{
   display: flex;
-  gap: 3rem;
-  justify-content: space-between;
+  gap: $font-size-grande;
+  @media (max-width: $mobile_sm) {
+    flex-direction: column;
+  }
   &__left{
     display: flex;
     flex: 3;
     flex-direction: column;
     gap: 3.5rem;
     padding: $padding-horizontal;
-    @media (max-width: $desktop_xsm) {
+    @media (max-width: $mobile_sm) {
+      flex-direction: column;
+      gap: $font-size-medio;
+      padding: $padding-horizontal-mb;
+    }
+    @media (min-width: $desktop_xsm) {
       padding: $padding-horizontal-mobile;
     }
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
@@ -23,7 +30,7 @@
     &__ad{
       align-items: center;
       background-color: $cor-azul;
-      border-radius: 4rem;
+      border-radius: $font-size-extrag;
       color: $cor-branco;
       display: flex;
       justify-content: flex-start;
@@ -32,8 +39,15 @@
       position: relative;
       text-transform: uppercase;
       width: fit-content;
+      @media (max-width: $mobile_sm) {
+        justify-content: center;
+        margin-top: $font-size-medio;
+      }
       >span{
         z-index: 2;
+        @media (max-width: $mobile_sm) {
+          font-size: .9rem;
+        }
       }
       >div{
         animation: slide 1400ms linear alternate;
@@ -50,29 +64,39 @@
       color: $cor-branco;
       display: flex;
       flex-direction: column;
-      font-size: 4rem;
+      font-size: $font-size-extrag;
       font-weight: bold;
       text-overflow: inherit;
       text-transform: uppercase;
+      @media (max-width: $mobile_sm) {
+        font-size: $font-size-grande;
+      }
       >div:nth-child(1){
-        margin-top: 2rem;
+        margin-top: $font-size-medio;
       }
     }
     &__description{
       display: flex;
       margin-top: 1.5rem;
       span{
-        font-size: 1rem;
+        font-size: $font-size-normal;
         font-weight: 200;
         letter-spacing: 2px;
-        margin-top: 1rem;
+        margin-top: $font-size-normal;
         text-transform: none;
         width: 50%;
+        @media (max-width: $mobile_sm) {
+          font-size: .9rem;
+          width: 100%;
+        }
       }
     }
     &__figures{
       display: flex;
-      gap: 2rem;
+      gap: $font-size-medio;
+      @media (max-width: $mobile_sm) {
+        gap: $font-size-normal;
+      }
       >div{
         display: flex;
         flex-direction: column;
@@ -82,6 +106,9 @@
           color: $cor-branco;
           font-size: 2.5rem;
           font-weight: 500;
+          @media (max-width: $mobile_sm) {
+            font-size: 1.5rem;
+          }
         }
         p{
           align-items: center;
@@ -95,7 +122,7 @@
     }
     &__buttons{
       display: flex;
-      gap: 1rem;
+      gap: $font-size-normal;
       font-weight: normal;
       >:nth-child(2){
         background-color: transparent;
@@ -132,14 +159,17 @@
     background-color: transparent;
     flex: 1;
     position: relative;
+    @media (max-width: $mobile_sm) {
+      display: none;
+    }
     &__heartRate{
       align-items: center;
       background-color: $cor-azul-2;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      padding: 2rem;
+      gap: $font-size-normal;
+      padding: $font-size-medio;
       position: absolute;
       right: 4.4rem;
       top: 7rem;

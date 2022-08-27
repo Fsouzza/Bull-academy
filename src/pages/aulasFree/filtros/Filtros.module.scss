@@ -6,6 +6,10 @@
   gap: .6rem;
   flex-wrap: wrap;
   margin: 2rem 0;
+  @media (max-width: $mobile) {
+    flex-direction: row;
+    gap: 1rem;
+  }
   &__filtro {
     align-items: center;
     background-color: $cor-cinza;
@@ -16,6 +20,11 @@
     height: 40px;
     justify-content: center;
     width: 92px;
+    @media (max-width: $mobile) {
+      flex-direction: row;
+      width: 76px;
+      margin: auto;
+    }
     &--ativo {
       background-color: $cor-azul;
       color: $cor-branco;

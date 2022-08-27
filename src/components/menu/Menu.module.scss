@@ -7,7 +7,12 @@
   display: flex;
   justify-content: space-between;
   padding: 0 $padding-horizontal;
-  @media (max-width: $desktop_xsm) {
+  @media (max-width: $mobile_sm) {
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem $padding-horizontal-mb;
+  }
+  @media (min-width: $desktop_xsm) {
     padding: 0 $padding-horizontal-mobile;
   }
   @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
@@ -19,7 +24,7 @@
   >div{
     align-items: center;
     display: flex;
-    gap: 1rem;
+    gap: $font-size-normal;
     justify-content: center;
     h1{
       color: $cor-cinza;
@@ -27,16 +32,33 @@
       font-weight: bold;
       letter-spacing: 1px;
       width: fit-content;
+      @media (max-width: $mobile_sm) {
+        display: none;
+      }
     }
   }
   &__image{
     width: 89px;
     height: 60px;
     align-items: center;
+    @media (max-width: $mobile_sm) {
+      width: 60px;
+      height: 50px;
+    }
+    @media (min-width: $mobile) {
+      width: 70px;
+      height: 60px;
+    }
   }
   &__list {
     align-items: center;
     display: flex;
+    @media (max-width: $mobile_sm) {
+      display: none;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
   &__link {
     list-style-type: none;
@@ -74,9 +96,29 @@
     display: flex;
     justify-content: center;
     margin: auto 0;
-    padding: 1rem 2rem;
+    padding: $font-size-normal 2rem;
     &:hover {
       background: $gradient-hover;
+    }
+    @media (max-width: $mobile_sm) {
+      display: none;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+  &__lock{
+    color: $cor-borda-cinza;
+    display: none;
+    font-size: $font-size-medio;
+    &:hover, &:focus{
+      color: $cor-azul;
+    }
+    @media (max-width: $mobile_sm) {
+      display: flex;
+    }
+    @media (max-width: $mobile) {
+      display: flex;
     }
   }
 }

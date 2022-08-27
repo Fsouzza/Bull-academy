@@ -7,15 +7,27 @@
   display: flex;
   gap: 2rem;
   justify-content: flex-start;
+  @media (max-width: $mobile_sm) {
+    gap: .5rem;
+  }
   &__category,&__time,&__chanel{
     border: 1px solid $cor-cinza;
     border-radius: .5rem;
     font-size: .9rem;
     padding: .1rem .5rem;
+    @media (max-width: $mobile_sm) {
+      padding: .2rem 0;
+      border: none;
+    }
   }
   &__price{
     color: $cor-branco;
     background-color: $cor-verde;
-    padding: .1rem .5rem;
+    border-radius: .5rem;
+    padding: .2rem .5rem;
+    @media (max-width: $mobile_sm) {
+      padding: .1rem .4rem;
+      border-radius: 0;
+    }
   }
-  }
+}
