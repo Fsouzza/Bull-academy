@@ -1,0 +1,56 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.endereco{
+  margin: 15rem auto;
+  &__titulo{
+    align-items: center;
+    color: $cor-branco;
+    display: flex;
+    font-size: 3rem;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+  }
+  &__address{
+    background: $gradient;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 4rem 0;
+    iframe{
+      border: none;
+      opacity: .8;
+      transition: .7s ease;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  &__cardAddress{
+    align-items: flex-start;
+    color: $cor-cinza;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    justify-content: center;
+    h4{
+      color: $cor-branco;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+    span{
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: .5rem;
+    }
+    p{
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+}

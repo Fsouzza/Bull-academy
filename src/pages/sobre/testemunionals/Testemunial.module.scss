@@ -1,0 +1,65 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.testemunho{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rem auto;
+  &__titulo{
+    color: $cor-branco;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+  &__cards{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+    justify-content: center;
+    width: 60%;
+  }
+  &__card{
+    background-color: $cor-azul-escuro;
+    color: $cor-preta;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    p{
+      pointer-events: none;
+      color: $cor-branco-2;
+      text-align: left;
+      margin-top: 2rem;
+    }
+  }
+  &__conteudo{
+    align-items: center;
+    color: $cor-cinza;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    img{
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+    }
+  }
+  &__identificacao{
+    display: flex;
+    flex-direction: column;
+    h5{
+      color: $cor-branco-2;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    span{
+      font-size: 1rem;
+    }
+  }
+}
