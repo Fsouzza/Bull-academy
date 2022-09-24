@@ -8,6 +8,10 @@
   justify-content: space-around;
   margin-top: 8rem;
   padding: 0 $padding-horizontal;
+  @media (max-width: $mobile_sm) {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
 
 .esquerda{
@@ -17,12 +21,23 @@
   gap: .5rem;
   &__txt1, &__txt2{
     font-size: 1rem;
+    @media (max-width: $mobile_sm) {
+      font-size: .86rem;
+    }
   }
   h3{
     font-size: 5.5rem;
+    @media (max-width: $mobile_sm) {
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
   }
   p{
     font-size: 1.2rem;
+    @media (max-width: $mobile_sm) {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -30,6 +45,10 @@
   img{
     height: 40rem;
     width: 60rem;
+    @media (max-width: $mobile_sm) {
+      height: 300px;
+      width: 350px;
+    }
   }
 }
 

@@ -11,6 +11,12 @@
   margin-top: 6rem;
   margin-bottom: 12rem;
   text-transform: uppercase;
+  @media (max-width: $mobile_sm){
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .empresaCard{
@@ -21,22 +27,37 @@
   margin: auto;
   position: relative;
   width: 70%;
+  @media (max-width: $mobile_sm){
+    flex-direction: column;
+    width: 100%;
+  }
   &__conteudo{
     display: flex;
     flex-direction: column;
     padding: 4rem 3rem;
+    @media (max-width: $mobile_sm){
+      padding: 2rem 1rem;
+    }
     span{
       color: $cor-branco;
       font-size: 8rem;
       font-weight: bold;
       margin-top: 2rem;
       text-align: right;
+      @media (max-width: $mobile_sm){
+        font-size: 4rem;
+        margin-top: 1rem;
+        text-align: center;
+      }
     }
     p{
       color: $cor-cinza;
       font-size: 1.2rem;
       margin-top: 1rem;
       text-align: right;
+      @media (max-width: $mobile_sm){
+        text-align: left;
+      }
     }
   }
   &__imagem{
@@ -44,6 +65,11 @@
     position: relative;
     right: -8rem;
     top: -8rem;
+    @media (max-width: $mobile_sm){
+      right: -.86rem;
+      top: 3.2rem;
+      width: 350px;
+    }
   }
 }
 
@@ -57,6 +83,17 @@
   justify-content: center;
   margin: 10rem auto;
   width: 50%;
+  p{
+    @media (max-width: $mobile_sm){
+      font-size: 1rem;
+      margin: auto 1rem;
+    }
+  }
+  @media (max-width: $mobile_sm){
+    flex-direction: column;
+    margin: 6rem auto 4rem auto;
+    width: 100%;
+  }
   &__logo{
     height: 100px;
     width: 120px;
@@ -69,6 +106,9 @@
   flex-direction: row;
   gap: 3rem;
   justify-content: center;
+  @media (max-width: $mobile_sm){
+    gap: 1.5rem;
+  }
   &__quadro{
     align-items: center;
     background-color: $cor-azul-2;
@@ -77,11 +117,22 @@
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
-    min-width: 200px;
+    width: 200px;
+    @media (max-width: $mobile_sm){
+      width: 100px;
+    }
     span{
       color: $cor-cinza;
       font-size: 1.5rem;
       font-weight: bold;
+      @media (max-width: $mobile_sm){
+        font-size: 1rem;
+      }
+    }
+    p{
+      @media (max-width: $mobile_sm){
+        font-size: .9rem;
+      }
     }
   }
 }

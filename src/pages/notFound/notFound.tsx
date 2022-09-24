@@ -15,7 +15,7 @@ export const NotFound = () => {
           <br />
           Infelizmente, isso é tudo que sabemos.
         </p>
-        <BotaoVoltar />
+        <BotaoVoltar/>
       </div>
 
       <figure className={styles.direita}>

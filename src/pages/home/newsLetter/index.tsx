@@ -11,7 +11,7 @@ export const NewsLetter = () =>{
       <section className={styles.newsletter}>
         <div className={styles.newsletter__esquerda}>
           <p>Deseja ter acesso a promoções <span>exclusivas</span> ?</p>
-          <p>Obtenha promoções em primeira mão diretamente em seu e-mail e a diversos códigos que variam de 10% à 20% no valor mensal.</p>
+          <p>Obtenha promoções em primeira mão diretamente em seu e-mail e a diversos códigos também que variam de 10% à 25% no valor mensal.</p>
         </div>
         <div className={styles.newsletter__direita}>
           <input placeholder='Seu email aqui'></input>

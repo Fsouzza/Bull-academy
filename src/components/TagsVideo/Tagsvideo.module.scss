@@ -8,7 +8,9 @@
   gap: 2rem;
   justify-content: flex-start;
   @media (max-width: $mobile_sm) {
-    gap: .5rem;
+    gap: .76rem;
+    justify-content: flex-start;
+    width: 100%;
   }
   &__category,&__time,&__chanel{
     border: 1px solid $cor-cinza;

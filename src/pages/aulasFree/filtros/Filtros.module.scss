@@ -8,7 +8,7 @@
   margin: 2rem 0;
   @media (max-width: $mobile) {
     flex-direction: row;
-    gap: 1rem;
+    gap: .5rem;
   }
   &__filtro {
     align-items: center;

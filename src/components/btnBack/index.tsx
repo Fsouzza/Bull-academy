@@ -9,7 +9,7 @@ export const BotaoVoltar = () =>{
     <button className={styles.button}
       onClick={() => navigate(-1)}
     >
-      <IoArrowBackCircleOutline size={40} />
+      <IoArrowBackCircleOutline />
     </button>
   );
 };
