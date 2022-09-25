@@ -27,7 +27,12 @@ export const Player = () =>{
               <span className='stroke-text'>Lição</span>
               <span>de hoje</span>
             </h2>
-            <ReactPlayer url={player.video} controls={true} width={900} height={500} />
+            <div className={styles.player}>
+              <ReactPlayer url={player.video} controls={true} width={900} height={500} />
+            </div>
+            <div className={styles.player__mobile}>
+              <ReactPlayer url={player.video} controls={true} width={370} height={350} />
+            </div>
             <div className={styles.videoAula__subtitulo}>
               <h3>{player.title}</h3>
             </div>

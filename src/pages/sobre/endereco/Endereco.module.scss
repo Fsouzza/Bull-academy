@@ -3,6 +3,9 @@
 
 .endereco{
   margin: 15rem auto;
+  @media (max-width: $mobile_sm){
+    margin: 6rem auto;
+  }
   &__titulo{
     align-items: center;
     color: $cor-branco;
@@ -13,6 +16,9 @@
     margin-top: 10rem;
     margin-bottom: 4rem;
     text-transform: uppercase;
+    @media (max-width: $mobile_sm){
+      font-size: 2rem;
+    }
   }
   &__address{
     background: $gradient;
@@ -20,12 +26,20 @@
     gap: 4rem;
     justify-content: center;
     padding: 4rem 0;
+    @media (max-width: $mobile_sm){
+      flex-direction: column;
+      gap: 1.5rem;
+    }
     iframe{
       border: none;
       opacity: .8;
       transition: .7s ease;
       &:hover{
         opacity: 1;
+      }
+      @media (max-width: $mobile_sm){
+        height: 100%;
+        width: 100%;
       }
     }
   }
@@ -36,21 +50,33 @@
     flex-direction: column;
     font-style: normal;
     justify-content: center;
+    @media (max-width: $mobile_sm){
+      padding: 0 1rem;
+    }
     h4{
       color: $cor-branco;
       font-size: 2.5rem;
       font-weight: bold;
       text-decoration: none;
       margin-bottom: 1rem;
+      @media (max-width: $mobile_sm){
+        font-size: 1.4rem;
+      }
     }
     span{
       font-size: 1.3rem;
       font-weight: 500;
       margin-bottom: .5rem;
+      @media (max-width: $mobile_sm){
+        font-size: .96rem;
+      }
     }
     p{
       font-size: 1.1rem;
       line-height: 1.6;
+      @media (max-width: $mobile_sm){
+        font-size: .9rem;
+      }
     }
   }
 }

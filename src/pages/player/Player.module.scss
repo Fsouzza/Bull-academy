@@ -67,3 +67,15 @@
     }
   }
 }
+
+.player{
+  @media (max-width: $mobile){
+    display: none;
+  }
+  &__mobile{
+    display: none;
+    @media (max-width: $mobile){
+      display: flex;
+    }
+  }
+}
