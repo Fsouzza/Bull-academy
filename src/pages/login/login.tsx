@@ -1,20 +1,44 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Botao from 'components/botao';
 import styles from './login.module.scss';
 import logo from '../../assets/img/foxLogo.png';
 import { TelaLogin } from 'components/telaLogin';
+import http from './../../http/index';
 
 export const Login = () =>{
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [senha, setSenha] = useState('');
+  const navigate = useNavigate();
+  const aoSubmeterFormular = (evento: React.FormEvent<HTMLFormElement>) => {
+    evento.preventDefault();
+    const usuario = {
+      email,
+      senha,
+    };
+    http.post('public/login', usuario)
+      .then(resposta => {
+        sessionStorage.setItem('token', resposta.data.access_token);
+        setEmail('');
+        setSenha('');
+        navigate('/');
+      })
+      .catch(erro => {
+        if(erro?.response?.data?.message) {
+          alert(erro.response.data.message);
+        } else {
+          alert('Erro inesperado ao efetuar login');
+        }
+      });
+  };
+
 
   return (
     <TelaLogin>
       <div className={styles.container}>
         <div className={styles.container__login}>
           <div className={styles.container__wrap}>
-            <form action="" className={styles.form}>
+            <form action="" className={styles.form} onSubmit={aoSubmeterFormular}>
               <span className={styles.form__title}>
                 <img src={logo} alt="logo da empresa" />
               </span>
@@ -41,13 +65,13 @@ export const Login = () =>{
               <div className={`${styles.input__wrap} ${styles.input__wrap2}`}>
                 <input
                   className={
-                    password !== ''
+                    senha !== ''
                       ? `${styles.hasVal} ${styles.input}`
                       : `${styles.input}`
                   }
                   type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={senha}
+                  onChange={(e) => setSenha(e.target.value)}
                 />
                 <span
                   className={styles.input__focus}

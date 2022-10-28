@@ -1,7 +1,11 @@
 import logo from '../../assets/img/foxLogo.png';
 import styles from './Menu.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FiLock } from 'react-icons/fi';
+import { CgProfile } from 'react-icons/cg';
+import { FiLogOut } from 'react-icons/fi';
+import { HiOutlineStatusOnline } from 'react-icons/hi';
+import { useState } from 'react';
 
 export const Menu = () =>{
   const rotas = [{
@@ -17,6 +21,15 @@ export const Menu = () =>{
     label: 'Sobre',
     to: '/sobre'
   }];
+  const token = sessionStorage.getItem('token');
+  const [userLogin, setUserLogin] = useState<boolean>(token !== null);
+  const navigate = useNavigate();
+
+  const clickLogout = () => {
+    setUserLogin(false);
+    sessionStorage.removeItem('token');
+    navigate('/');
+  };
 
   return (
     <nav className={styles.menu}>
@@ -32,10 +45,34 @@ export const Menu = () =>{
             </Link>
           </li>
         ))}
+        { userLogin &&
+          (<li className={styles.menu__link}>
+            <Link className={styles.menu__label} to='/exclusivos'>
+              <span>
+                Exclusivos 
+                <HiOutlineStatusOnline color='green' />
+              </span>
+            </Link>
+          </li>)
+        }
       </ul>
-      <Link className={styles.menu__btn} to='/login'>
+      { !userLogin &&
+        (<Link className={styles.menu__btn} to='/login'>
           Acessar
-      </Link>
+        </Link>)
+      }
+      { userLogin &&
+        (<ul className={styles.login}>
+          <li className={styles.login__logado}>
+            Minha Conta
+            <CgProfile color='#cecece' />
+          </li>
+          <li className={styles.login__logado} onClick={clickLogout}>
+            Logout
+            <FiLogOut color='#cecece' />
+          </li>
+        </ul>)
+      }
       <Link className={styles.menu__lock} to='/login'>
         <FiLock />
       </Link>

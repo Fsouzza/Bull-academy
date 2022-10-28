@@ -21,6 +21,10 @@
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 0 $padding-horizontal-md;
   }
+  span{
+    display: flex;
+    gap: 4px;
+  }
   >div{
     align-items: center;
     display: flex;
@@ -53,6 +57,7 @@
   &__list {
     align-items: center;
     display: flex;
+    justify-content: center;
     @media (max-width: $mobile_sm) {
       display: none;
     }
@@ -119,6 +124,25 @@
     }
     @media (max-width: $mobile) {
       display: flex;
+    }
+  }
+}
+
+.login{
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2em;
+  gap: 2em;
+  justify-content: center;
+  &__logado{
+    align-items: center;
+    color: $cor-cinza;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    &:hover{
+      color: $cor-azul;
     }
   }
 }

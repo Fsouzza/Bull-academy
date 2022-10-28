@@ -10,44 +10,65 @@ import styles from './register.module.scss';
 import styles2 from 'pages/login/login.module.scss';
 import logo from '../../assets/img/foxLogo.png';
 import { TelaLogin } from 'components/telaLogin';
+import http from './../../http/index';
 
 export const Register = () => {
-  const [{ name, email, password, repeatPassword }, setRegisterData] = useState(
+  const [{ nome, email, senha, endereco, cep, complemento }, setRegisterData] = useState(
     {
-      name: '',
+      nome: '',
       email: '',
-      password: '',
-      repeatPassword: '',
+      senha: '',
+      endereco: '',
+      cep: '',
+      complemento: '',
     }
   );
-
   const [nameErr, setNameErr] = useState(false);
   const [emailErr, setEmailErr] = useState(false);
   const [passwordErr, setPasswordErr] = useState(false);
-
   const validate = () => {
-    if (!validateEmail.test(email)) {
+    if (!validateEmail.test(email) && !validatePassword.test(senha) && !validateNome.test(nome)) {
       setEmailErr(true);
-    } else {
-      setEmailErr(false);
-    }
-
-    if (!validatePassword.test(password)) {
       setPasswordErr(true);
-    } else {
-      setPasswordErr(false);
-    }
-
-    if (!validateNome.test(name)) {
       setNameErr(true);
     } else {
+      setEmailErr(false);
+      setPasswordErr(false);
       setNameErr(false);
     }
+  };
+  const aoSubmUser = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    validate();
+    const usuario = {
+      nome,
+      email,
+      senha,
+      endereco,
+      cep,
+      complemento
+    };
+
+    http.post('public/registrar', usuario)
+      .then(() => {
+        alert('Usuário foi cadastrado com sucesso');
+        setRegisterData({
+          nome: '',
+          email: '',
+          senha: '',
+          endereco: '',
+          cep: '',
+          complemento: '',
+        });
+      })
+      .catch(() => {
+        alert('OPS! Houve algum erro...');
+      });
   };
 
   return (
     <TelaLogin>
-      <form action="" className={styles2.form}>
+      <form action="" onSubmit={aoSubmUser} className={styles2.form}>
         <span className={styles2.form__title}>
           <img src={logo} alt="logo da empresa" />
         </span>
@@ -63,13 +84,15 @@ export const Register = () => {
             }
             name="name"
             type="text"
-            value={name}
+            value={nome}
             onChange={(e) =>
               setRegisterData({
-                name: e.target.value,
+                nome: e.target.value,
                 email,
-                password,
-                repeatPassword,
+                senha,
+                endereco,
+                cep,
+                complemento
               })
             }
             required
@@ -94,10 +117,12 @@ export const Register = () => {
             value={email}
             onChange={(e) =>
               setRegisterData({
-                name,
+                nome,
                 email: e.target.value,
-                password,
-                repeatPassword,
+                senha,
+                endereco,
+                cep,
+                complemento
               })
             }
             required
@@ -119,13 +144,15 @@ export const Register = () => {
             }
             name="password"
             type="password"
-            value={password}
+            value={senha}
             onChange={(e) =>
               setRegisterData({
-                name,
+                nome,
                 email,
-                password: e.target.value,
-                repeatPassword,
+                senha: e.target.value,
+                endereco,
+                cep,
+                complemento
               })
             }
             required
