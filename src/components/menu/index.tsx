@@ -2,10 +2,11 @@ import logo from '../../assets/img/foxLogo.png';
 import styles from './Menu.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiLock } from 'react-icons/fi';
-import { CgProfile } from 'react-icons/cg';
-import { FiLogOut } from 'react-icons/fi';
 import { HiOutlineStatusOnline } from 'react-icons/hi';
 import { useState } from 'react';
+import { DropdownNotification } from './dropdownMenus/dropdownNotification/DropdownNotification';
+import { DropdownSettings } from './dropdownMenus/dropdownSettings/DropdownSettings';
+import { DropdownPerfil } from './dropdownMenus/dropdownPerfil/DropdownPerfil';
 
 export const Menu = () =>{
   const rotas = [{
@@ -63,14 +64,9 @@ export const Menu = () =>{
       }
       { userLogin &&
         (<ul className={styles.login}>
-          <li className={styles.login__logado}>
-            Minha Conta
-            <CgProfile color='#cecece' />
-          </li>
-          <li className={styles.login__logado} onClick={clickLogout}>
-            Logout
-            <FiLogOut color='#cecece' />
-          </li>
+          <DropdownNotification />
+          <DropdownSettings />
+          <DropdownPerfil onClick={clickLogout}/>
         </ul>)
       }
       <Link className={styles.menu__lock} to='/login'>

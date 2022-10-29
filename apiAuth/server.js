@@ -335,7 +335,7 @@ server.get('/public/mais-vendidos', (req, res) => {
   ]);
 });
 
-server.use(/^(?!\/(public|livros|autores|categorias)).*$/, (req, res, next) => {
+server.use(/^(?!\/(public|livros|autores|categorias|exclusivos)).*$/, (req, res, next) => {
   if (req.headers.authorization === undefined || req.headers.authorization.split(' ')[0] !== 'Bearer') {
     const status = 401;
     const message = 'Token inválido';

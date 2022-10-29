@@ -30,6 +30,11 @@ em{
     -webkit-text-stroke-color: #fff;
 }
 
+button{
+    background-color: transparent;
+    border: none;
+}
+
 .mySwiper{
     margin-bottom: 10rem;
 }

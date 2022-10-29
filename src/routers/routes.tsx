@@ -8,6 +8,7 @@ import { Sobre } from 'pages/sobre/sobre';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Login } from '../pages/login/login';
 import { Register } from '../pages/register/register';
+import { AulasExclusivas } from './../pages/aulasExclusivas/aulasExclusivas';
 
 export const AppRouter = () =>{
   return(
@@ -18,6 +19,7 @@ export const AppRouter = () =>{
           <Route path='treinos' element={<AulasFree />} />
           <Route path='planos' element={<Planos />} />
           <Route path='sobre' element={<Sobre />} />
+          <Route path='exclusivos' element={<AulasExclusivas />} />
         </Route>
         <Route path='/login' element={<Login />}/>
         <Route path='/register' element={<Register />}/>

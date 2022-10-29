@@ -1,0 +1,93 @@
+@import "../../../../styles/variaveis";
+
+.profileMenu {
+	align-items: center;
+	background-color: #2c2c2c;
+	border: 1px solid $cor-secundaria;
+	border-radius: .6em;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	justify-content: center;
+	opacity: 1;
+	padding: 2em;
+	position: absolute;
+	right: 1em;
+	top: 4.2em;
+	z-index: 999;
+	width: 300px;
+	&::before {
+		background-color: #2c2c2c;
+		border-left: 1px solid $cor-secundaria;
+		border-top: 1px solid $cor-secundaria;
+		content: "";
+		height: 25px;
+		position: absolute;
+		right: 1.5em;
+		top: -13px;
+		transform: rotate(45deg);
+		width: 25px;
+	}
+	&__profile{
+		border-radius: 1em;
+    	height: 32px;
+    	width: 32px;
+	}
+	&__inativo {
+		display: none;
+	}
+	&__titulo {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.5em;
+		margin-bottom: 0.8em;
+		h3 {
+			color: $cor-branco-2;
+			font-size: 1.1em;
+			font-weight: 500;
+		}
+		span {
+			color: $cor-cinza;
+			font-size: 0.8em;
+			font-weight: 400;
+		}
+	}
+	&__items {
+		align-items: initial;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+	&__item {
+		margin-bottom: 0.5em;
+		button {
+		align-items: center;
+		color: $cor-branco;
+		cursor: pointer;
+		display: flex;
+		font-size: .9em;
+		gap: 0.5em;
+		justify-content: flex-start;
+		transition: 0.3s all;
+		&:hover {
+			color: $cor-azul;
+		}
+		}
+	}
+	&__termos {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		gap: 0.2em;
+		justify-content: center;
+		width: 100%;
+		span {
+      		color: $cor-branco-2;
+			font-size: .8em;
+		}
+	}
+}

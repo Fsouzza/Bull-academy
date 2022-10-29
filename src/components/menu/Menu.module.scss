@@ -130,10 +130,9 @@
 
 .login{
   align-items: center;
-  cursor: pointer;
   display: flex;
   font-size: 1.2em;
-  gap: 2em;
+  gap: 1em;
   justify-content: center;
   &__logado{
     align-items: center;
@@ -143,6 +142,31 @@
     justify-content: center;
     &:hover{
       color: $cor-azul;
+    }
+  }
+  &__link {
+    border: 3px solid transparent;
+    border-radius: 1em;
+    color: $cor-branco-2;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3em;
+    padding: 0;
+    overflow: hidden;
+    &:hover {
+      background-color: #4b4b4b;
+      color: $cor-cinza;
+      transition: 0.2s ease-in;
+    }
+    &__ativo{
+      border: 3px solid $cor-azul;
+      border-radius: 1em;
+      color: $cor-branco-2;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.3em;
+      padding: 0;
+      overflow: hidden;
     }
   }
 }
