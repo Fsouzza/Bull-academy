@@ -501,14 +501,294 @@
   ],
   "exclusivos": [
     {
-      "title": "Cardio Extreme 1 hour",
-      "description": "Com esse novo treino cardio, você precisará se dedicar ao máximo para poder completar toda a série de exercícios. Com muitos saltos e exercícios bem dinâmicos, seu ritmo cardíaco será acelerado.",
-      "thumb": "/assets/thumb/cardio01.jpg",
+      "title": "Cardio Ultra Extreme",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae",
+      "thumb": "/assets/thumb/cardio06.jpg",
       "canal": "Roberta's Gym",
-      "time": 26,
+      "time": 33,
       "video": "https://www.youtube.com/watch?v=QviiPHwQOdY",
       "price": "Diamante",
       "id": 1,
+      "category": {
+        "id": 1,
+        "label": "Cardio"
+      }
+    },
+    {
+      "title": "Meia hora abdominal",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae",
+      "thumb": "/assets/thumb/abs6.jpg",
+      "canal": "Roberta's Gym",
+      "time": 26,
+      "video": "https://www.youtube.com/watch?v=efT4p3u6-_0",
+      "price": "Diamante",
+      "id": 2,
+      "category": {
+        "id": 2,
+        "label": "Abs"
+      }
+    },
+    {
+      "title": "Abdominal bucking",
+      "description": "Fazendo esse treino de trinta minutos todos os dias, você irá realizar exercícios abdominais todos de pé e sem impactos.",
+      "thumb": "/assets/thumb/abs7.jpg",
+      "canal": "Roberta's Gym",
+      "time": 45,
+      "video": "https://www.youtube.com/watch?v=G4PUdTlxL-c",
+      "price": "Diamante",
+      "id": 3,
+      "category": {
+        "id": 2,
+        "label": "Abs"
+      }
+    },
+    {
+      "title": "Power jump com tranpolim",
+      "description": "Basta apenas se exercitar todos os dias, nem que sejam apenas alguns minutinhos que sentirá a diferença em poucos dias",
+      "thumb": "/assets/thumb/body06.jpg",
+      "canal": "Malibu Exclusive",
+      "time": 50,
+      "video": "https://www.youtube.com/watch?v=YmPV-fcv93I",
+      "price": "Diamante",
+      "id": 4,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Aquecimentos Iniciais",
+      "description": "Estes exercícios têm o potencial de queimar calorias de maneira fácil! Este treino de 16 minutos fará com que você sinta que fez uma sessão completa.",
+      "thumb": "/assets/thumb/a6.jpg",
+      "canal": "Roberta's Gym",
+      "time": 18,
+      "video": "https://www.youtube.com/watch?v=3fhOP0QcReE&t=229s",
+      "price": "Diamante",
+      "id": 5,
+      "category": {
+        "id": 4,
+        "label": "Heating"
+      }
+    },
+    {
+      "title": "Hit Dancing",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae",
+      "thumb": "/assets/thumb/body07.jpg",
+      "canal": "Curves em Casa",
+      "time": 18,
+      "video": "https://www.youtube.com/watch?v=0inehtIgEag",
+      "price": "Diamante",
+      "id": 6,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Jump fitness",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae",
+      "thumb": "/assets/thumb/body02.jpg",
+      "canal": "Tici Ribeiro",
+      "time": 28,
+      "video": "https://www.youtube.com/watch?v=DZmm9nzuKA8",
+      "price": "Diamante",
+      "id": 7,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Cardio + Gordura Lateral",
+      "description": "A consistência e a regularidade dos treinos são conceitos-chave para que você possa obter os melhores resultados.",
+      "thumb": "/assets/thumb/cardio04.jpg",
+      "canal": "Tici Ribeiro",
+      "time": 30,
+      "video": "https://www.youtube.com/watch?v=21EN3ec3lgI",
+      "price": "Diamante",
+      "id": 8,
+      "category": {
+        "id": 1,
+        "label": "Cardio"
+      }
+    },
+    {
+      "title": "Exercício Abdômen hard",
+      "description": "Seu abdômen alcançara aquela barriga tanquinho em casa, com apenas 7 Minutos de treino! Realize esse exercício 3 vezes na semana para maiores resultados.",
+      "thumb": "/assets/thumb/abs2.jpg",
+      "canal": "Roberta's Gym",
+      "time": 30,
+      "video": "https://www.youtube.com/watch?v=E_pKG0hI1rI",
+      "price": "Diamante",
+      "id": 9,
+      "category": {
+        "id": 2,
+        "label": "Abs"
+      }
+    },
+    {
+      "title": "Meia hora de alongamento",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae",
+      "thumb": "/assets/thumb/a3.jpg",
+      "canal": "Carol Borba",
+      "time": 29,
+      "video": "https://www.youtube.com/watch?v=l4wI3ZfJFJ4",
+      "price": "Diamante",
+      "id": 10,
+      "category": {
+        "id": 4,
+        "label": "Heating"
+      }
+    },
+    {
+      "title": "Alongamentos ao acordar",
+      "description": "Hoje tem treino para deixar de ser encurtado, é isso, nunca mais aos encurtados! Vou passar pra você um treino de alongamento que todo mundo deve fazer em casa, vamos fazer em um clima bem gostosinho e eu quero você comigo.",
+      "thumb": "/assets/thumb/a1.jpg",
+      "canal": "Carol Borba",
+      "time": 22,
+      "video": "https://www.youtube.com/watch?v=uUlIDnBZmMQ",
+      "price": "Diamante",
+      "id": 11,
+      "category": {
+        "id": 4,
+        "label": "Heating"
+      }
+    },
+    {
+      "title": "Cardio Hit intenso sem repetições",
+      "description": "Powerful routines guaranteed to get your heart rate up faster than going on any gym machine.",
+      "thumb": "/assets/thumb/cardio02.jpg",
+      "canal": "FitConcept",
+      "time": 29,
+      "video": "https://www.youtube.com/watch?v=Dt9jf0f2MGs",
+      "price": "Diamante",
+      "id": 12,
+      "category": {
+        "id": 1,
+        "label": "Cardio"
+      }
+    },
+    {
+      "title": "Jump + Dance completo",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae.",
+      "thumb": "/assets/thumb/body05.jpeg",
+      "canal": "FitConcept",
+      "time": 15,
+      "video": "https://www.youtube.com/watch?v=rXI7nvFFrpc",
+      "price": "Diamante",
+      "id": 13,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Alongamento antes de dormir",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae.",
+      "thumb": "/assets/thumb/a2.jpg",
+      "canal": "Carol Borba",
+      "time": 15,
+      "video": "https://www.youtube.com/watch?v=1e-XE4aXaDo",
+      "price": "Diamante",
+      "id": 14,
+      "category": {
+        "id": 4,
+        "label": "Heating"
+      }
+    },
+    {
+      "title": "Desafio 14 dias - Corrida estacionaria",
+      "description": "Você trabalhará toda a sua região abdominal, fazendo com que seu corpo possa focalizar uma queima de gordura nessa porção do corpo, deixando sua cintura modelada.",
+      "thumb": "/assets/thumb/abs1.jpg",
+      "canal": "Roberta's Gym",
+      "time": 36,
+      "video": "https://www.youtube.com/watch?v=h9o3t9rpokw",
+      "price": "Diamante",
+      "id": 15,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Exercícios longos com repetições",
+      "description": "Preparando os músculos para o treino principal. São 18 minutinhos de exercícios em pé e de baixo impacto.",
+      "thumb": "/assets/thumb/a5.jpg",
+      "canal": "Roberta's Gym",
+      "time": 48,
+      "video": "https://www.youtube.com/watch?v=OjPl3QLWeG0",
+      "price": "Diamante",
+      "id": 16,
+      "category": {
+        "id": 4,
+        "label": "Heating"
+      }
+    },
+    {
+      "title": "Ultra cardio de pé",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae.",
+      "thumb": "/assets/thumb/cardio01.jpg",
+      "canal": "Roberta's Gym",
+      "time": 30,
+      "video": "https://www.youtube.com/watch?v=bdrafRSeVDc",
+      "price": "Diamante",
+      "id": 17,
+      "category": {
+        "id": 1,
+        "label": "Cardio"
+      }
+    },
+    {
+      "title": "Desafio six pack simple",
+      "description": "If you're looking for a simple home routine you can do to get the famous six pack abs then this is the program you should be doing.",
+      "thumb": "/assets/thumb/abs4.jpg",
+      "canal": "Roberta's Gym",
+      "time": 10,
+      "video": "https://www.youtube.com/watch?v=vKJ1EIo7A8s",
+      "price": "Diamante",
+      "id": 18,
+      "category": {
+        "id": 2,
+        "label": "Abs"
+      }
+    },
+    {
+      "title": "JUMP com corda + trampolim",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magnam unde, accusantium neque error repellat odio distinctio enim quasi praesentium consequuntur, dolorum, suscipit quidem! Alias nam voluptas consectetur rem recusandae.",
+      "thumb": "/assets/thumb/body03.jpg",
+      "canal": "Carol Borba",
+      "time": 12,
+      "video": "https://www.youtube.com/watch?v=Oua9fQowSOk",
+      "price": "Diamante",
+      "id": 19,
+      "category": {
+        "id": 3,
+        "label": "Body Jump"
+      }
+    },
+    {
+      "title": "Cardio Hiit - Desafio De 14 Dias",
+      "description": "Este é um treino de potência máxima, Lorem ipsum dolor sit, amet consectetur adipisicing elit. dolorum.",
+      "thumb": "/assets/thumb/cardio01.jpg",
+      "canal": "Roberta's Gym",
+      "time": 55,
+      "video": "https://www.youtube.com/watch?v=WVU816hcft8",
+      "price": "Diamante",
+      "id": 20,
+      "category": {
+        "id": 1,
+        "label": "Cardio"
+      }
+    },
+    {
+      "title": "Cardio para iniciantes",
+      "description": "Com esse novo treino cardio, você precisará se dedicar ao máximo para poder completar toda a série de exercícios. Com muitos saltos e exercícios bem dinâmicos, seu ritmo cardíaco será acelerado.",
+      "thumb": "/assets/thumb/cardio04.jpg",
+      "canal": "Roberta's Gym",
+      "time": 26,
+      "video": "https://www.youtube.com/watch?v=QviiPHwQOdY",
+      "price": "Free",
+      "id": 21,
       "category": {
         "id": 1,
         "label": "Cardio"
@@ -521,8 +801,8 @@
       "canal": "Roberta's Gym",
       "time": 20,
       "video": "https://www.youtube.com/watch?v=efT4p3u6-_0",
-      "price": "Diamante",
-      "id": 2,
+      "price": "Free",
+      "id": 22,
       "category": {
         "id": 2,
         "label": "Abs"
@@ -535,8 +815,8 @@
       "canal": "Roberta's Gym",
       "time": 30,
       "video": "https://www.youtube.com/watch?v=G4PUdTlxL-c",
-      "price": "Diamante",
-      "id": 3,
+      "price": "Free",
+      "id": 23,
       "category": {
         "id": 2,
         "label": "Abs"
@@ -549,8 +829,8 @@
       "canal": "Malibu Exclusive",
       "time": 32,
       "video": "https://www.youtube.com/watch?v=YmPV-fcv93I",
-      "price": "Diamante",
-      "id": 4,
+      "price": "Free",
+      "id": 24,
       "category": {
         "id": 3,
         "label": "Body Jump"
@@ -563,8 +843,8 @@
       "canal": "Roberta's Gym",
       "time": 16,
       "video": "https://www.youtube.com/watch?v=3fhOP0QcReE&t=229s",
-      "price": "Diamante",
-      "id": 5,
+      "price": "Free",
+      "id": 25,
       "category": {
         "id": 4,
         "label": "Heating"
@@ -577,8 +857,8 @@
       "canal": "Curves em Casa",
       "time": 13,
       "video": "https://www.youtube.com/watch?v=0inehtIgEag",
-      "price": "Diamante",
-      "id": 6,
+      "price": "Free",
+      "id": 26,
       "category": {
         "id": 3,
         "label": "Body Jump"
@@ -591,8 +871,8 @@
       "canal": "Tici Ribeiro",
       "time": 8,
       "video": "https://www.youtube.com/watch?v=DZmm9nzuKA8",
-      "price": "Diamante",
-      "id": 7,
+      "price": "Free",
+      "id": 27,
       "category": {
         "id": 3,
         "label": "Body Jump"
@@ -605,8 +885,8 @@
       "canal": "Roberta's Gym",
       "time": 20,
       "video": "https://www.youtube.com/watch?v=21EN3ec3lgI",
-      "price": "Diamante",
-      "id": 8,
+      "price": "Free",
+      "id": 28,
       "category": {
         "id": 1,
         "label": "Cardio"
@@ -619,8 +899,8 @@
       "canal": "Roberta's Gym",
       "time": 7,
       "video": "https://www.youtube.com/watch?v=E_pKG0hI1rI",
-      "price": "Diamante",
-      "id": 9,
+      "price": "Free",
+      "id": 29,
       "category": {
         "id": 2,
         "label": "Abs"
@@ -633,8 +913,8 @@
       "canal": "Carol Borba",
       "time": 9,
       "video": "https://www.youtube.com/watch?v=l4wI3ZfJFJ4",
-      "price": "Diamante",
-      "id": 10,
+      "price": "Free",
+      "id": 30,
       "category": {
         "id": 4,
         "label": "Heating"
@@ -647,8 +927,8 @@
       "canal": "Carol Borba",
       "time": 13,
       "video": "https://www.youtube.com/watch?v=uUlIDnBZmMQ",
-      "price": "Diamante",
-      "id": 11,
+      "price": "Free",
+      "id": 31,
       "category": {
         "id": 4,
         "label": "Heating"
@@ -661,8 +941,8 @@
       "canal": "Roberta's Gym",
       "time": 20,
       "video": "https://www.youtube.com/watch?v=Dt9jf0f2MGs",
-      "price": "Diamante",
-      "id": 12,
+      "price": "Free",
+      "id": 32,
       "category": {
         "id": 1,
         "label": "Cardio"
@@ -675,8 +955,8 @@
       "canal": "Ernesto FitConcept",
       "time": 57,
       "video": "https://www.youtube.com/watch?v=rXI7nvFFrpc",
-      "price": "Diamante",
-      "id": 13,
+      "price": "Free",
+      "id": 33,
       "category": {
         "id": 3,
         "label": "Body Jump"
@@ -689,8 +969,8 @@
       "canal": "Carol Borba",
       "time": 12,
       "video": "https://www.youtube.com/watch?v=1e-XE4aXaDo",
-      "price": "Diamante",
-      "id": 14,
+      "price": "Free",
+      "id": 34,
       "category": {
         "id": 4,
         "label": "Heating"
@@ -703,8 +983,8 @@
       "canal": "Roberta's Gym",
       "time": 31,
       "video": "https://www.youtube.com/watch?v=h9o3t9rpokw",
-      "price": "Diamante",
-      "id": 15,
+      "price": "Free",
+      "id": 35,
       "category": {
         "id": 2,
         "label": "Abs"
@@ -717,8 +997,8 @@
       "canal": "Roberta's Gym",
       "time": 18,
       "video": "https://www.youtube.com/watch?v=OjPl3QLWeG0",
-      "price": "Diamante",
-      "id": 16,
+      "price": "Free",
+      "id": 36,
       "category": {
         "id": 4,
         "label": "Heating"
@@ -731,8 +1011,8 @@
       "canal": "Roberta's Gym",
       "time": 20,
       "video": "https://www.youtube.com/watch?v=bdrafRSeVDc",
-      "price": "Diamante",
-      "id": 17,
+      "price": "Free",
+      "id": 37,
       "category": {
         "id": 1,
         "label": "Cardio"
@@ -745,8 +1025,8 @@
       "canal": "Roberta's Gym",
       "time": 16,
       "video": "https://www.youtube.com/watch?v=vKJ1EIo7A8s",
-      "price": "Diamante",
-      "id": 18,
+      "price": "Free",
+      "id": 38,
       "category": {
         "id": 2,
         "label": "Abs"
@@ -759,8 +1039,8 @@
       "canal": "Carol Borba",
       "time": 13,
       "video": "https://www.youtube.com/watch?v=Oua9fQowSOk",
-      "price": "Diamante",
-      "id": 19,
+      "price": "Free",
+      "id": 39,
       "category": {
         "id": 3,
         "label": "Body Jump"
@@ -773,8 +1053,8 @@
       "canal": "Roberta's Gym",
       "time": 31,
       "video": "https://www.youtube.com/watch?v=WVU816hcft8",
-      "price": "Diamante",
-      "id": 20,
+      "price": "Free",
+      "id": 40,
       "category": {
         "id": 1,
         "label": "Cardio"

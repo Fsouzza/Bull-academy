@@ -4,7 +4,7 @@
 .videos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 16px;
     margin-top: $font-size-medio;
     width: fit-content;
     @media (max-width: $mobile_sm) {

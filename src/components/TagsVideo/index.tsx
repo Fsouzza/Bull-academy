@@ -16,7 +16,7 @@ export const TagsVideo = ({
         {canal}
       </div>
       <div className={styles.tags__time}>
-        {time} minutos
+        {time} min.
       </div>
       <div className={price === 'Free' ? `${styles.tags__price}` : `${styles.tags__diamond}`}>
         {price}

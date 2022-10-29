@@ -1,8 +1,8 @@
 import {  Exclusivos } from 'types/videos';
 import { useEffect, useState } from 'react';
 import { Video } from '../../aulasFree/videos/video';
-import axios from 'axios';
 import styles from './Videos.module.scss';
+import http from './../../../http/index';
 
 interface Props {
   busca: string,
@@ -40,13 +40,7 @@ export const Videos = (props: Props) => {
   }
 
   useEffect(()=> {
-    const token = sessionStorage.getItem('token');
-
-    axios.get<Exclusivos[]>('http://localhost:8000/exclusivos', {
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
-    })
+    http.get<Exclusivos[]>('exclusivos')
       .then(resposta => setExclusivos(ordenar(resposta.data.filter(item => testaBusca(item.title) && testaFiltro(item.category.id)))))
       .catch((erro) => console.log(erro));
   }, [busca, filtro, ordenador]);
