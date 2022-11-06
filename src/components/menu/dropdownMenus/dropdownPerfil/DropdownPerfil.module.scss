@@ -65,17 +65,17 @@
 	&__item {
 		margin-bottom: 0.5em;
 		button {
-		align-items: center;
-		color: $cor-branco;
-		cursor: pointer;
-		display: flex;
-		font-size: .9em;
-		gap: 0.5em;
-		justify-content: flex-start;
-		transition: 0.3s all;
-		&:hover {
-			color: $cor-azul;
-		}
+			align-items: center;
+			color: $cor-branco;
+			cursor: pointer;
+			display: flex;
+			font-size: .9em;
+			gap: 0.5em;
+			justify-content: flex-start;
+			transition: 0.3s all;
+			&:hover {
+				color: $cor-azul;
+			}
 		}
 	}
 	&__termos {
