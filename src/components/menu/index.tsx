@@ -3,25 +3,27 @@ import styles from './Menu.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiLock } from 'react-icons/fi';
 import { HiOutlineStatusOnline } from 'react-icons/hi';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DropdownNotification } from './dropdownMenus/dropdownNotification/DropdownNotification';
 import { DropdownSettings } from './dropdownMenus/dropdownSettings/DropdownSettings';
 import { DropdownPerfil } from './dropdownMenus/dropdownPerfil/DropdownPerfil';
 
+const rotas = [{
+  label: 'Home',
+  to: '/'
+}, {
+  label: 'Planos',
+  to: '/planos'
+}, {
+  label: 'Treinos',
+  to: '/treinos'
+}, {
+  label: 'Sobre',
+  to: '/sobre'
+}];
+
 export const Menu = () =>{
-  const rotas = [{
-    label: 'Home',
-    to: '/'
-  }, {
-    label: 'Planos',
-    to: '/planos'
-  }, {
-    label: 'Treinos',
-    to: '/treinos'
-  }, {
-    label: 'Sobre',
-    to: '/sobre'
-  }];
+  const [scroll, setscroll] = useState(false);
   const token = sessionStorage.getItem('token');
   const [userLogin, setUserLogin] = useState<boolean>(token !== null);
   const navigate = useNavigate();
@@ -32,8 +34,20 @@ export const Menu = () =>{
     navigate('/');
   };
 
+  const changeColorOnScroll = () => {
+    window.scrollY >= 100 ? setscroll(true) : setscroll(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeColorOnScroll);
+
+    return () => {
+      window.removeEventListener('scroll', changeColorOnScroll);
+    };
+  }, []);
+
   return (
-    <nav className={styles.menu}>
+    <nav className={styles.menu} style={scroll ? {backgroundColor: 'rgba(33, 32, 37, 0.95)'} : {backgroundColor: ''}}>
       <div>
         <img className={styles.menu__image} src={logo} alt="" />
         <h1>Bull <br /> Fitness</h1>

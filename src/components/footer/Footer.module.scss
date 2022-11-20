@@ -5,15 +5,15 @@
   background: $cor-azul-escuro;
   font-size: 1rem;
   margin-top: 7rem;
-  padding: $padding-horizontal 0;
+  padding: 3rem 0 0 0;
     @media (max-width: $desktop_xsm) {
-      padding: $padding-horizontal-mobile 0;
+      padding: 1.4rem 0 0 0;
     }
     @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-      padding: $padding-horizontal-sm 0;
+      padding: 1.4rem 0 0 0;
     }
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-      padding: $padding-horizontal-md 0;
+      padding: 1.4rem 0 0 0;
     }
   text-align: center;
   &__logo{
@@ -58,7 +58,6 @@
   &__copyright{
     border-top: 1px solid $cor-cinza;
     color: $cor-cinza;
-    margin-bottom: 1rem;
-    padding-top: .5rem;
+    padding: .5rem 0 .6rem 0;
   }
 }

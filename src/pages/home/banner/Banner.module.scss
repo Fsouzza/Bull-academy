@@ -12,17 +12,11 @@
     flex: 3;
     flex-direction: column;
     gap: 3.5rem;
-    padding: $padding-horizontal;
+    padding: 8rem 2.76rem 2.76rem 2.76rem;
     @media (max-width: $mobile_sm) {
       flex-direction: column;
       gap: $font-size-medio;
-      padding: $padding-horizontal-mb;
-    }
-    @media (min-width: $desktop_xsm) {
-      padding: $padding-horizontal-mobile;
-    }
-    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-      padding: $padding-horizontal-sm;
+      padding: 5rem 1rem 1rem 1rem;
     }
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
       padding: $padding-horizontal-md;
@@ -172,7 +166,7 @@
       padding: $font-size-medio;
       position: absolute;
       right: 4.4rem;
-      top: 7rem;
+      top: 14rem;
       width: fit-content;
       z-index: 4;
       >span:nth-child(3){
@@ -193,7 +187,7 @@
       height: 640px;
       position: absolute;
       right: 12rem;
-      top: 4rem;
+      top: 10rem;
       z-index: 3;
       width: 540px;
     }
@@ -201,7 +195,7 @@
       height: 600px;
       position: absolute;
       right: 0;
-      top: 7rem;
+      top: 14rem;
       z-index: 2;
       width: 1000px;
     }

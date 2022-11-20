@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 $padding-horizontal;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
   @media (max-width: $mobile_sm) {
     align-items: center;
     justify-content: space-between;
@@ -20,6 +23,9 @@
   }
   @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
     padding: 0 $padding-horizontal-md;
+  }
+  .menuBg{
+    background-color: rgba(38, 11, 125, 0.5);
   }
   span{
     display: flex;
