@@ -47,7 +47,7 @@ export const Menu = () =>{
   }, []);
 
   return (
-    <nav className={styles.menu} style={scroll ? {backgroundColor: 'rgba(33, 32, 37, 0.95)'} : {backgroundColor: ''}}>
+    <nav className={styles.menu} style={scroll ? {backgroundColor: 'rgba(34, 34, 34, 0.96)', borderBottom: '0.5px solid #404040'} : {backgroundColor: ''}}>
       <div>
         <img className={styles.menu__image} src={logo} alt="" />
         <h1>Bull <br /> Fitness</h1>
