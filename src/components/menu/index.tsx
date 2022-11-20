@@ -1,6 +1,6 @@
 import logo from '../../assets/img/foxLogo.png';
 import styles from './Menu.module.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FiLock } from 'react-icons/fi';
 import { HiOutlineStatusOnline } from 'react-icons/hi';
 import { useState, useEffect } from 'react';
@@ -55,9 +55,9 @@ export const Menu = () =>{
       <ul className={styles.menu__list}>
         {rotas.map((rota, index) => (
           <li key={index} className={styles.menu__link}>
-            <Link to={rota.to}>
+            <NavLink to={rota.to} className={(navData) => navData.isActive ? `${styles.a__active}` : `${styles.a}`}>
               {rota.label}
-            </Link>
+            </NavLink>
           </li>
         ))}
         { userLogin &&
@@ -71,12 +71,10 @@ export const Menu = () =>{
           </li>)
         }
       </ul>
-      { !userLogin &&
+      { !userLogin ?
         (<Link className={styles.menu__btn} to='/login'>
           Acessar
-        </Link>)
-      }
-      { userLogin &&
+        </Link>) : 
         (<ul className={styles.login}>
           <DropdownNotification />
           <DropdownSettings />

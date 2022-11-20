@@ -1,4 +1,3 @@
-import videos from 'data/videos.json';
 import styles from './Mostpopular.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,6 +6,7 @@ import { Pagination } from 'swiper';
 import {FaPlay, FaPlus} from 'react-icons/fa';
 import { Link, useNavigate} from 'react-router-dom';
 import { Player } from 'types/videos';
+import videos from 'data/videos.json';
 
 export const Recomendados = ()=>{
   let videosRecomendados = [...videos];

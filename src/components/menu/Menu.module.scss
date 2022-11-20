@@ -6,7 +6,7 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 0 $padding-horizontal;
+  padding: 0;
   position: fixed;
   width: 100vw;
   z-index: 999;
@@ -15,15 +15,6 @@
     justify-content: space-between;
     padding: .5rem $padding-horizontal-mb;
   }
-  @media (min-width: $desktop_xsm) {
-    padding: 0 $padding-horizontal-mobile;
-  }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 0 $padding-horizontal-sm;
-  }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 0 $padding-horizontal-md;
-  }
   span{
     display: flex;
     gap: 4px;
@@ -31,8 +22,8 @@
   >div{
     align-items: center;
     display: flex;
-    gap: $font-size-normal;
     justify-content: center;
+    margin-left: 2rem;
     h1{
       color: $cor-cinza;
       font-size: 1.6rem;
@@ -71,7 +62,7 @@
   &__link {
     list-style-type: none;
     padding: 0 14px;
-    a {
+    .a {
       color: $cor-cinza;
       cursor: pointer;
       font-size: 1.1rem;
@@ -80,18 +71,33 @@
       text-transform: uppercase;
       transition: .2s ease;
       &:hover {
-        color: $cor-azul-escuro;
+        color: $cor-cinza;
       }
       &::after{
         content: "";
         display: block;
         width: 0;
         height: 2px;
-        background: $cor-azul-escuro;
+        background: $cor-cinza;
         transition: width 0.4s;
       }
       &:hover::after {
         width: 100%;
+      }
+      &__active{
+        color: $cor-azul;
+        font-size: 1.11rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .2s ease;
+        &::after{
+          content: "";
+          display: block;
+          height: 2px;
+          background: $cor-azul;
+          width: 100%;
+        }
       }
     }
   }
@@ -103,7 +109,7 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin: auto 0;
+    margin-right: 2rem;
     padding: $font-size-normal 2rem;
     &:hover {
       background: $gradient-hover;
