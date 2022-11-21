@@ -1,8 +1,8 @@
 import styles from './Video.module.scss';
 import { FiPlayCircle } from 'react-icons/fi';
-import { Player } from 'types/videos';
 import { useNavigate } from 'react-router-dom';
 import { TagsVideo } from 'components/TagsVideo';
+import { Player } from 'types/videos';
 
 export const Video = (props: Player) =>{
   const { id, thumb, title, description} = props;
