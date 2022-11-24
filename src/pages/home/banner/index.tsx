@@ -8,7 +8,7 @@ import { CgGym } from 'react-icons/cg';
 import { BiRun } from 'react-icons/bi';
 import { GiGymBag } from 'react-icons/gi';
 
-export const Banner = () => {
+const Banner = () => {
 
   return(
     <div className={styles.header}>
@@ -90,3 +90,5 @@ export const Banner = () => {
     </div>
   );
 };
+
+export default Banner;

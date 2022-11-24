@@ -6,7 +6,7 @@ import logo from '../../assets/img/foxLogo.png';
 import { TelaLogin } from 'components/telaLogin';
 import http from './../../http/index';
 
-export const Login = () =>{
+const Login = () =>{
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
@@ -102,3 +102,5 @@ export const Login = () =>{
     </TelaLogin>
   );
 };
+
+export default Login;

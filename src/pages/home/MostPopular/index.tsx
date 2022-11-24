@@ -8,7 +8,7 @@ import { Link, useNavigate} from 'react-router-dom';
 import { Player } from 'types/videos';
 import videos from 'data/videos.json';
 
-export const Recomendados = ()=>{
+const Recomendados = ()=>{
   let videosRecomendados = [...videos];
   videosRecomendados = videosRecomendados.sort(()=> 0.5 - Math.random()).splice(0,4);
   const navigate = useNavigate();
@@ -52,3 +52,5 @@ export const Recomendados = ()=>{
     </section>
   );
 };
+
+export default Recomendados;

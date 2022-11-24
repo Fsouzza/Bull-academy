@@ -10,7 +10,7 @@ interface Props {
   ordenador: string
 }
 
-export const Videos = (props: Props) => {
+const Videos = (props: Props) => {
   const [exclusivos, setExclusivos] = useState<Exclusivos[]>([]);
   const {busca, filtro, ordenador} = props;
 
@@ -56,3 +56,5 @@ export const Videos = (props: Props) => {
     </div>
   );
 };
+
+export default Videos;

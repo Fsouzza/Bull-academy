@@ -3,7 +3,7 @@ import { Menu } from 'components/menu';
 import { Outlet } from 'react-router-dom';
 
 
-export const PagePadrao = () => {
+const PagePadrao = () => {
   return(
     <>
       <Menu />
@@ -14,3 +14,5 @@ export const PagePadrao = () => {
     </>
   );
 };
+
+export default PagePadrao;

@@ -1,13 +1,13 @@
 import styles from './Player.module.scss';
 import { useParams, Routes, Route } from 'react-router-dom';
 import videos from 'data/videos.json';
-import { NotFound } from 'pages/notFound/notFound';
-import { PagePadrao } from 'components/pagePadrao';
+import NotFound from 'pages/notFound/notFound';
+import PagePadrao from 'components/pagePadrao';
 import ReactPlayer from 'react-player';
 import { BotaoVoltar } from 'components/btnBack';
 import { TagsVideo } from 'components/TagsVideo';
 
-export const Player = () =>{
+const Player = () =>{
   const {id} = useParams();
   const player = videos.find(item => item.id === Number(id));
 
@@ -47,3 +47,5 @@ export const Player = () =>{
     </Routes>
   );
 };
+
+export default Player;

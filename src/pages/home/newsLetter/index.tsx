@@ -1,7 +1,7 @@
 import styles from './Newsletter.module.scss';
 import {RiSendPlaneFill} from 'react-icons/ri';
 
-export const NewsLetter = () =>{
+const NewsLetter = () =>{
   return(
     <div>
       <div className={styles.titulo}>
@@ -26,3 +26,5 @@ export const NewsLetter = () =>{
     </div>
   );
 };
+
+export default NewsLetter;

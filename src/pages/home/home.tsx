@@ -1,9 +1,9 @@
-import { Planos } from 'pages/planos/planos';
-import { Banner } from './banner';
-import { Recomendados } from './MostPopular';
-import { NewsLetter } from './newsLetter';
+import Planos from 'pages/planos/planos';
+import Banner from './banner';
+import Recomendados from './MostPopular';
+import NewsLetter from './newsLetter';
 
-export const Home = () => {
+const Home = () => {
   return(
     <main>
       <Banner />
@@ -13,3 +13,5 @@ export const Home = () => {
     </main>
   );
 };
+
+export default Home;

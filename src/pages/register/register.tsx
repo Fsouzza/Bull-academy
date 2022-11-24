@@ -12,7 +12,7 @@ import logo from '../../assets/img/foxLogo.png';
 import { TelaLogin } from 'components/telaLogin';
 import http from './../../http/index';
 
-export const Register = () => {
+const Register = () => {
   const [{ nome, email, senha, endereco, cep, complemento }, setRegisterData] = useState(
     {
       nome: '',
@@ -182,3 +182,5 @@ export const Register = () => {
           
   );
 };
+
+export default Register;

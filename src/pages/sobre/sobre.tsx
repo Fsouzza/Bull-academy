@@ -6,7 +6,7 @@ import { Testemunials } from './testemunionals';
 import { Adress } from './endereco';
 
 
-export const Sobre = () =>{
+const Sobre = () =>{
   return(
     <section>
       <h2 className={styles.titulo}>
@@ -55,3 +55,5 @@ export const Sobre = () =>{
     
   );
 };
+
+export default Sobre;

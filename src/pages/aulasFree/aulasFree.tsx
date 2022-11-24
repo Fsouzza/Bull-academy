@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import styles from './Aulas.module.scss';
-import { Buscador } from './buscador';
-import { Filtros } from './filtros';
-import { Ordenador } from './ordenador';
+import Buscador from './buscador';
+import Filtros from './filtros';
+import Ordenador from './ordenador';
 import { Videos } from './videos';
 
-export const AulasFree = () =>{
+const AulasFree = () =>{
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
@@ -25,3 +25,5 @@ export const AulasFree = () =>{
     </section>
   );
 };
+
+export default AulasFree;

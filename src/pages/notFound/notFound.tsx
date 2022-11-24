@@ -2,7 +2,7 @@ import styles from './Notfound.module.scss';
 import notFoundImage from 'assets/img/logoError.png';
 import { BotaoVoltar } from 'components/btnBack';
 
-export const NotFound = () => {
+const NotFound = () => {
   
 
   return(
@@ -24,3 +24,5 @@ export const NotFound = () => {
     </section>
   );
 };
+
+export default NotFound;

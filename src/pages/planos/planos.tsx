@@ -5,7 +5,7 @@ import {IoDiamond} from 'react-icons/io5';
 import { FaCrown, FaMouse } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-export const Planos = () =>{
+const Planos = () =>{
   return(
     <section>
       <div className={styles.planos}>
@@ -141,3 +141,5 @@ export const Planos = () =>{
     </section>
   );
 };
+
+export default Planos;

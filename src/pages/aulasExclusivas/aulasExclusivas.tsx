@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import styles from './Aulas.module.scss';
-import { Buscador } from '../aulasFree/buscador';
-import { Filtros } from '../aulasFree/filtros';
-import { Ordenador } from '../aulasFree/ordenador';
-import { Videos } from './videos';
+import Buscador from '../aulasFree/buscador';
+import Filtros from '../aulasFree/filtros';
+import Ordenador from '../aulasFree/ordenador';
+import Videos from './videos';
 
-export const AulasExclusivas = () =>{
+const AulasExclusivas = () =>{
   const [busca, setBusca] = useState('');
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState('');
@@ -25,3 +25,5 @@ export const AulasExclusivas = () =>{
     </section>
   );
 };
+
+export default AulasExclusivas;
