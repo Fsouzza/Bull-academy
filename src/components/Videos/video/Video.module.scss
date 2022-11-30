@@ -20,9 +20,10 @@
     background-color: $cor-preta-2;
     transform: scale(1);
     img{
-      border-left: 6px solid $cor-azul;
+      border-left: 2px solid $cor-azul;
+      border-bottom: 2px solid $cor-azul;
       opacity: 1;
-      transform: scale(1.06);
+      transform: scale(1.16);
       transition: linear .5s;
     }
   }
