@@ -1,7 +1,6 @@
 import { ReactElement } from 'react';
 import styles from './TelaLogin.module.scss';
 
-
 export const TelaLogin = ({children}: {children: ReactElement}) => {
   return(
     <div className={styles.container}>

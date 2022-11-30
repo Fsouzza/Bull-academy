@@ -1,7 +1,6 @@
 import styles from './botao.module.scss';
 import React from 'react';
 
-
 interface Props{
     type?: 'button' | 'submit' | 'reset' | undefined, onClick?: () => void, children?: React.ReactNode
 }

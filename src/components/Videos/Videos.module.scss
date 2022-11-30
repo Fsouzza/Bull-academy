@@ -1,0 +1,15 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: $font-size-medio;
+    width: fit-content;
+    @media (max-width: $mobile_sm) {
+      display: flex;
+      flex-direction: column;
+      margin-top: $font-size-normal;
+    }
+  }

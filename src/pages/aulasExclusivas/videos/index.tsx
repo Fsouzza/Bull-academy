@@ -1,28 +1,13 @@
 import {  Exclusivos } from 'types/videos';
 import { useEffect, useState } from 'react';
-import { Video } from '../../aulasFree/videos/video';
+import Video from 'components/Videos/video/video';
 import styles from './Videos.module.scss';
-import http from './../../../http/index';
+import http from 'http/index';
+import { iBuscadores } from 'types/buscadores';
+import { testaBusca, testaFiltro } from 'helpers/buscadores';
 
-interface Props {
-  busca: string,
-  filtro: number | string | null,
-  ordenador: string
-}
-
-const Videos = (props: Props) => {
+const Videos = ({busca, filtro, ordenador}: iBuscadores) => {
   const [exclusivos, setExclusivos] = useState<Exclusivos[]>([]);
-  const {busca, filtro, ordenador} = props;
-
-  function testaBusca(title: string){
-    const regex = new RegExp(busca, 'i');
-    return regex.test(title);
-  }
-
-  function testaFiltro(id: number){
-    if(filtro !== null) return filtro === id;
-    return true;
-  }
 
   function ordenar(novaLista: Exclusivos[]){
     switch(ordenador){
@@ -41,7 +26,7 @@ const Videos = (props: Props) => {
 
   useEffect(()=> {
     http.get<Exclusivos[]>('exclusivos')
-      .then(resposta => setExclusivos(ordenar(resposta.data.filter(item => testaBusca(item.title) && testaFiltro(item.category.id)))))
+      .then(resposta => setExclusivos(ordenar(resposta.data.filter(item => testaBusca(item.title, busca) && testaFiltro(item.category.id, filtro)))))
       .catch((erro) => console.log(erro));
   }, [busca, filtro, ordenador]);
 

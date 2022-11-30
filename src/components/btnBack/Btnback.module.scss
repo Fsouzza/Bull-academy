@@ -18,7 +18,7 @@
   transition: .4s;
   width: fit-content;
   &:hover{
-    box-shadow: 0 6px 12px rgba(7, 6, 34, 0.65);
+    box-shadow: 0 6px 12px rgba(7, 6, 34, 0.35);
     color: $cor-azul;
     opacity: 1;
     transform: scale(1.05);

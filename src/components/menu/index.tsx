@@ -27,13 +27,11 @@ export const Menu = () =>{
   const token = sessionStorage.getItem('token');
   const [userLogin, setUserLogin] = useState<boolean>(token !== null);
   const navigate = useNavigate();
-
   const clickLogout = () => {
     setUserLogin(false);
     sessionStorage.removeItem('token');
     navigate('/');
   };
-
   const changeColorOnScroll = () => {
     window.scrollY >= 100 ? setscroll(true) : setscroll(false);
   };
